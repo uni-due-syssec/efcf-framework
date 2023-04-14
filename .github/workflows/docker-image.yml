@@ -52,7 +52,7 @@ jobs:
 
       - name: test runs
         run: >
-          docker run --rm ${{ env.DOCKER_METADATA_OUTPUT_TAGS }} bash -c "cd /efcf && bash ./scripts/ci-test-wrapper.sh"
+          docker run --rm ${{ env.DOCKER_METADATA_OUTPUT_TAGS }} bash -c "cd /efcf && bash ./scripts/ci-sanity-check.sh"
       
       - name: push docker image
         uses: docker/build-push-action@v4
