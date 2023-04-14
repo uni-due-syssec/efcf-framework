@@ -213,8 +213,13 @@ def quick_build(config,
         exitcode = proc.poll()
         if exitcode != 0:
             if buildlog_mem and not log_path:
+                bm = buildlog_mem.join(b"")
+                try:
+                    bm = bm.decode("utf-8")
+                except UnicodeDecodeError:
+                    pass
                 loge(
-                    f"buildlog of failing quick-build.sh (exitcode {exitcode!s}):\n\n{buildlog_mem.join(b"").decode("utf-8")}"
+                    f"buildlog of failing quick-build.sh (exitcode {exitcode!s}):\n\n{bm}"
                 )
             elif log_path:
                 buildlog_mem_tail = ""
