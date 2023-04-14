@@ -49,6 +49,18 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+      - name: build/load cached docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: ./
+          file: docker/ubuntu.Dockerfile
+          push: false
+          load: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
       - name: test runs
         run: >
           docker run --rm ${{ env.DOCKER_METADATA_OUTPUT_TAGS }} bash -c "cd /efcf && ./scripts/ci-test-wrapper.sh"
