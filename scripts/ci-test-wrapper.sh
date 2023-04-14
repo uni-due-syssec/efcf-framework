@@ -12,6 +12,8 @@ export EFCF_BUILD_CACHE
 export FUZZING_TIME
 export AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES="1"
 
+set -eu -o pipefail
+
 mkdir -p out || true
 rm -rf "$EFCF_BUILD_CACHE"
 mkdir -p "$EFCF_BUILD_CACHE"

@@ -1,7 +1,7 @@
 ARG UBUNTU_VERSION=jammy
 FROM docker.io/ubuntu:$UBUNTU_VERSION
 
-ARG EFCF_VERSION=0.3
+ARG EFCF_VERSION=1
 
 ARG LLVM_VERSION=14
 ARG GCC_VERSION=11
@@ -83,7 +83,13 @@ RUN solc-select install 0.4.10 0.4.11 0.4.12 0.4.13 0.4.14 0.4.15 0.4.16 0.4.17 
                         0.5.0 0.5.1 0.5.2 0.5.3 0.5.4 0.5.6 0.5.7 0.5.8 0.5.9 0.5.10 \
                         0.7.6 \
                         0.8.13
-ENV PATH="/root/.solc-select/artifacts/:${PATH}"
+# incompatible with newest solc-select...
+ARG SOLC_SELECT_PATH_DIR=/root/.solc-select/PATH/
+RUN set -e; mkdir -p "$SOLC_SELECT_PATH_DIR"; for solc in /root/.solc-select/artifacts/solc-* /root/.solc-select/artifacts/solc-*/solc-*; do \
+      echo "$solc"; if ! test -d "$solc"; then ln -s "$(realpath "$solc")" \
+        "$SOLC_SELECT_PATH_DIR/$(basename $solc)"; fi \
+    done;
+ENV PATH="$SOLC_SELECT_PATH_DIR:$PATH"
 
 RUN cargo install --force ethabi-cli
 
@@ -119,9 +125,12 @@ VOLUME $INSTALL_DIR/ccache
 env CCACHE_DIR=$INSTALL_DIR/ccache
 ENV PATH="/usr/lib/ccache/:${PATH}"
 WORKDIR $INSTALL_DIR/src/AFLplusplus
+ENV NO_ARCH_OPT=1
+ENV IS_DOCKER=1
 ARG NO_PYTHON=1
-# ARG NO_SPLICING=1
 ARG NO_NYX=1
+ARG NO_CORESIGHT=1
+# ARG NO_SPLICING=1
 RUN make clean; make source-only && make install && afl-clang-lto --version >/dev/null
 env PATH=$PATH:/usr/local/bin/
 
@@ -150,6 +159,7 @@ RUN mkdir -p /root/.solcx \
         "/root/.solcx/solc-v$(basename $solc | cut -c 6-)"; fi \
     done; \
     python -c 'import solcx; print(solcx.get_installed_solc_versions())'
+ENV PATH="$PATH:/root/.solcx/"
 
 WORKDIR $INSTALL_DIR
 COPY .git .git
