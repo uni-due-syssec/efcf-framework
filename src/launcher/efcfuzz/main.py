@@ -435,6 +435,10 @@ def parse_args():
                         "--verbose",
                         action="store_true",
                         help="enable verbose logging")
+    parser.add_argument("-B",
+                        "--verbose-build",
+                        action="store_true",
+                        help="enable verbose logging of the build process")
     parser.add_argument(
         "-q",
         "--quiet",

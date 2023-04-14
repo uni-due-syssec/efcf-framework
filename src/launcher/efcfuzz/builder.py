@@ -179,7 +179,7 @@ def quick_build(config,
         proc = sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.PIPE)
 
         buildlog_fp = None
-        buildlog_mem = b''
+        buildlog_mem = []
         try:
             if log_path:
                 if not log_path.parent.exists():
@@ -201,30 +201,33 @@ def quick_build(config,
                         if log_path:
                             buildlog_fp.write(buf)
 
-                        if not config.quiet:
+                        if config.verbose_build or config.verbose:
                             sys.stdout.buffer.write(buf)
                             sys.stdout.flush()
-
-                        # if neither a logfile nor output is enabled then we keep
-                        # the build log around in case there is an error and we
-                        # want to show some error message
-                        if not log_path and config.quiet:
-                            buildlog_mem += buf
+                        else:
+                            buildlog_mem.append(buf)
         finally:
             if buildlog_fp:
                 buildlog_fp.close()
 
         exitcode = proc.poll()
         if exitcode != 0:
-            if buildlog_mem:
+            if buildlog_mem and not log_path:
                 loge(
-                    f"buildlog of failing quick-build.sh (exitcode {exitcode!s})"
+                    f"buildlog of failing quick-build.sh (exitcode {exitcode!s}):\n\n{buildlog_mem.join(b"").decode("utf-8")}"
                 )
-                sys.stdout.buffer.write(buildlog_mem)
-
-            if log_path and config.quiet:
+            elif log_path:
+                buildlog_mem_tail = ""
+                if buildlog_mem:
+                    buildlog_mem_tail = (
+                        b":\n\n---- snip ----\n" +
+                        (buildlog_mem.join(b"").split(b"\n")[-7:].join(b"\n")))
+                    try:
+                        buildlog_mem_tail = buildlog_mem_tail.decode("utf-8")
+                    except UnicodeDecodeError:
+                        pass
                 loge(
-                    f"build of eEVM/native smart contract failed (exitcode {exitcode!s}) see {log_path!s} for details"
+                    f"build of eEVM/native smart contract failed (exitcode {exitcode!s}) see {log_path!s} for a full log{buildlog_mem_tail}"
                 )
             else:
                 loge(
