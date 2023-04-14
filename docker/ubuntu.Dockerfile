@@ -84,11 +84,12 @@ RUN solc-select install 0.4.10 0.4.11 0.4.12 0.4.13 0.4.14 0.4.15 0.4.16 0.4.17 
                         0.7.6 \
                         0.8.13
 # incompatible with newest solc-select...
-RUN set -e; for solc in /root/.solc-select/artifacts/solc-* /root/.solc-select/artifacts/solc-*/solc-*; do \
+ARG SOLC_SELECT_PATH_DIR=/root/.solc-select/PATH/
+RUN set -e; mkdir -p "$SOLC_SELECT_PATH_DIR"; for solc in /root/.solc-select/artifacts/solc-* /root/.solc-select/artifacts/solc-*/solc-*; do \
       echo "$solc"; if ! test -d "$solc"; then ln -s "$(realpath "$solc")" \
-        "/root/.solc-select/PATH/$(basename $solc)"; fi \
-    done; \
-ENV PATH="/root/.solc-select/PATH/:${PATH}"
+        "$SOLC_SELECT_PATH_DIR/$(basename $solc)"; fi \
+    done;
+ENV PATH="$SOLC_SELECT_PATH_DIR:$PATH"
 
 RUN cargo install --force ethabi-cli
 
@@ -158,8 +159,7 @@ RUN mkdir -p /root/.solcx \
         "/root/.solcx/solc-v$(basename $solc | cut -c 6-)"; fi \
     done; \
     python -c 'import solcx; print(solcx.get_installed_solc_versions())'
-
-ENV PATH="/root/.solcx/:${PATH}"
+ENV PATH="$PATH:/root/.solcx/"
 
 WORKDIR $INSTALL_DIR
 COPY .git .git
