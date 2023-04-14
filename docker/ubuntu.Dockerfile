@@ -83,7 +83,8 @@ RUN solc-select install 0.4.10 0.4.11 0.4.12 0.4.13 0.4.14 0.4.15 0.4.16 0.4.17 
                         0.5.0 0.5.1 0.5.2 0.5.3 0.5.4 0.5.6 0.5.7 0.5.8 0.5.9 0.5.10 \
                         0.7.6 \
                         0.8.13
-ENV PATH="/root/.solc-select/artifacts/:${PATH}"
+# incompatible with newest solc-select...
+# ENV PATH="/root/.solc-select/artifacts/:${PATH}"
 
 RUN cargo install --force ethabi-cli
 
@@ -153,6 +154,7 @@ RUN mkdir -p /root/.solcx \
         "/root/.solcx/solc-v$(basename $solc | cut -c 6-)"; fi \
     done; \
     python -c 'import solcx; print(solcx.get_installed_solc_versions())'
+ENV PATH="/root/.solcx/:${PATH}"
 
 WORKDIR $INSTALL_DIR
 COPY .git .git
