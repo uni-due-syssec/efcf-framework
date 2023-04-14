@@ -46,4 +46,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      
+
+      - name: test runs
+        run: >
+          docker run --rm ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} bash -c "cd /efcf && ./scripts/ci-test-wrapper.sh"
