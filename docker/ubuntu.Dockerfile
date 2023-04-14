@@ -1,7 +1,7 @@
 ARG UBUNTU_VERSION=jammy
 FROM docker.io/ubuntu:$UBUNTU_VERSION
 
-ARG EFCF_VERSION=0.3
+ARG EFCF_VERSION=1
 
 ARG LLVM_VERSION=14
 ARG GCC_VERSION=11
@@ -119,9 +119,12 @@ VOLUME $INSTALL_DIR/ccache
 env CCACHE_DIR=$INSTALL_DIR/ccache
 ENV PATH="/usr/lib/ccache/:${PATH}"
 WORKDIR $INSTALL_DIR/src/AFLplusplus
+ENV NO_ARCH_OPT=1
+ENV IS_DOCKER=1
 ARG NO_PYTHON=1
-# ARG NO_SPLICING=1
 ARG NO_NYX=1
+ARG NO_CORESIGHT=1
+# ARG NO_SPLICING=1
 RUN make clean; make source-only && make install && afl-clang-lto --version >/dev/null
 env PATH=$PATH:/usr/local/bin/
 
