@@ -17,10 +17,10 @@ What are some problems that we encounter along the way?
 
 * We need to teach the fuzzer about structure: namely what is a transaction and
   what is the smart contract's ABI. We use a custom mutator for this:
-  <a href="./src/ethmutator/">`./src/ethmutator/`</a>
+  <a href="https://github.com/uni-due-syssec/efcf-ethmutator">`./src/ethmutator/`</a>
 * To increase speed and get useful coverage feedback, we translate EVM bytecode
   to C++ using a custom transpiler
-  <a href="./src/evm2cpp/">`./src/evm2cpp/`</a>
+  <a href="https://github.com/uni-due-syssec/efcf-evm2cpp">`./src/evm2cpp/`</a>
 
 This repository the primary entry point for the EF/CF project. It contains all
 the relevant code as sub-projects in `./src/` and several convenience scripts for
@@ -68,17 +68,16 @@ for citation:
 
 1. Enter container
    ```
+   docker run --rm -it ghcr.io/uni-due-syssec/efcf-framework:main
+   ```
+   or build the container from the cloned repository
+   ```
    make container-enter
-   ```
-   or if you have an already built docker image:
-   ```
-   docker load -i ./efcf*.tar
-   docker run --rm -it --tmpfs "/tmp/efcf/":exec,size=8g efcf
    ```
 2. Compile and then fuzz a solidity contract until the first crash/bug is
    discovered:
    ```
-   efcfuzz --until-crash --out /tmp/baby_bank_results/ --source ./data/examples/baby_bank.sol
+   efcfuzz --until-crash --out ./baby_bank_results/ --source ./data/examples/baby_bank.sol
    ```
 3. Inspect the identified crash
    ```
@@ -129,6 +128,20 @@ docker build \
 
 Note that there is also an Archlinux and Fedora based Dockerfile. They should
 work as well, but are not as well tested.
+
+For manually distributing a docker image (e.g., if including some local changes), use:
+
+```
+make container-release
+docker load -i ./efcf*.tar
+```
+
+We recommend the following docker options for launching:
+
+* `--security-opt seccomp=unconfined` - better fuzzing perf
+* `--net=host` - for easy access to a local ethereum node
+* `--tmpfs "/tmp/efcf/":exec,size=6g` - put EF/CF's temporary files onto a ramdisk if possible (less disk wear)
+* `--privileged` - to run `afl-system-config` or `efcfuzz --configure-system`
 
 
 ### VM / Bare-Metal
