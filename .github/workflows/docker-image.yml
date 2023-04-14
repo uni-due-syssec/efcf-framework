@@ -38,18 +38,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: ./
-          file: docker/ubuntu.Dockerfile
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-
-      - name: build/load cached docker image
+      - name: build docker image
         uses: docker/build-push-action@v4
         with:
           context: ./
@@ -64,3 +53,14 @@ jobs:
       - name: test runs
         run: >
           docker run --rm ${{ env.DOCKER_METADATA_OUTPUT_TAGS }} bash -c "cd /efcf && ./scripts/ci-test-wrapper.sh"
+      
+      - name: push docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: ./
+          file: docker/ubuntu.Dockerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
