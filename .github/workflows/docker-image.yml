@@ -51,4 +51,4 @@ jobs:
 
       - name: test runs
         run: >
-          docker run --rm ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.tags[0] }} bash -c "cd /efcf && ./scripts/ci-test-wrapper.sh"
+          docker run --rm ${{ env.DOCKER_METADATA_OUTPUT_TAGS }} bash -c "cd /efcf && ./scripts/ci-test-wrapper.sh"
