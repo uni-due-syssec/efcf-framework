@@ -1,0 +1,241 @@
+contract,mode,status,average_execs_per_sec,cumulative_execs_per_sec,total_execs_done,time,total_hangs,evm-coverage,bugs,wall clock time (h:)m:ss,crashes - Number of unique TX sequences,hardcoded address,bugtypes,queue - Number of unique TX sequences,total_time,total_crashes,log
+justlen128,mode-2AT,success,25044,100177,2243274,23,0,82.64462809917356,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:39.19,1,1,1,469,89,1,<NO LOG>
+justlen128,mode-2AT,success,25478,101912,3519702,35,0,82.64462809917356,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:49.50,1,1,1,495,137,1,<NO LOG>
+justlen128,mode-2AT,success,24113,96453,5667585,59,0,82.64462809917356,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:17.10,1,1,1,569,233,1,<NO LOG>
+justlen128,mode-2AT,success,26571,106284,2819800,27,0,82.64462809917356,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:43.20,1,1,1,492,105,1,<NO LOG>
+justlen128,mode-2AT,success,25756,103025,2421696,24,0,82.64462809917356,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:40.84,1,1,1,499,93,1,<NO LOG>
+justlen128,mode-2AT,success,27256,109024,3322187,31,0,82.64462809917356,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:47.92,1,1,1,497,121,1,<NO LOG>
+justlen128,mode-2AT,success,23587,94350,2394514,26,0,80.99173553719008,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:41.88,1,1,1,480,101,1,<NO LOG>
+justlen128,mode-2AT,success,25483,101932,2796274,28,0,81.81818181818183,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:44.48,1,1,1,484,109,1,<NO LOG>
+justlen128,mode-2AT,success,21385,85542,1741083,21,0,81.81818181818183,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:36.64,1,1,1,455,81,1,<NO LOG>
+justlen128,mode-2AT,success,20115,80463,1718856,22,0,81.81818181818183,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:38.29,2,1,1,492,85,2,<NO LOG>
+justlen256,mode-2AT,success,33030,132122,2843329,22,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:37.73,1,1,1,508,85,1,<NO LOG>
+justlen256,mode-2AT,success,23208,92834,4573029,47,0,91.74311926605503,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",1:06.63,1,1,1,529,197,2,<NO LOG>
+justlen256,mode-2AT,success,27387,109550,3340612,31,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:48.04,1,1,1,501,121,1,<NO LOG>
+justlen256,mode-2AT,success,25184,100736,3662969,34,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:54.36,1,1,1,541,145,1,<NO LOG>
+justlen256,mode-2AT,success,24221,96884,3541230,37,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:53.25,1,1,1,495,145,1,<NO LOG>
+justlen256,mode-2AT,success,22972,91890,5283622,58,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:17.10,1,1,1,584,229,1,<NO LOG>
+justlen256,mode-2AT,success,23565,94262,4099544,44,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:00.24,1,1,1,498,173,1,<NO LOG>
+justlen256,mode-2AT,success,20574,82296,2426772,30,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:47.02,1,1,1,479,117,1,<NO LOG>
+justlen256,mode-2AT,success,20054,80217,5155709,62,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:23.20,1,1,1,561,257,1,<NO LOG>
+justlen256,mode-2AT,success,24716,98866,5291306,54,0,91.74311926605503,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:11.29,1,1,1,569,213,1,<NO LOG>
+justlen64,mode-2AT,success,37506,150024,2008199,14,0,78.125,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:29.38,1,1,1,468,53,1,<NO LOG>
+justlen64,mode-2AT,success,35031,140126,3554193,23,0,78.125,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:42.87,2,1,1,510,101,2,<NO LOG>
+justlen64,mode-2AT,success,30651,122607,1395419,12,0,77.34375,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:27.04,1,1,1,453,45,1,<NO LOG>
+justlen64,mode-2AT,success,32685,130741,1157560,7,0,77.34375,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:24.43,1,1,1,425,35,1,<NO LOG>
+justlen64,mode-2AT,success,35343,141372,1886559,14,0,78.125,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:30.25,2,1,1,449,53,2,<NO LOG>
+justlen64,mode-2AT,success,29561,118246,3212321,25,0,78.125,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:44.47,1,1,1,508,109,1,<NO LOG>
+justlen64,mode-2AT,success,35997,143991,2223155,16,0,78.125,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:32.24,1,1,1,487,61,1,<NO LOG>
+justlen64,mode-2AT,success,32436,129746,2907102,23,0,78.125,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:38.66,1,1,1,515,89,1,<NO LOG>
+justlen64,mode-2AT,success,29832,119331,2189434,19,0,78.125,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:33.91,2,1,1,495,73,3,<NO LOG>
+justlen64,mode-2AT,success,34162,136651,2375242,18,0,78.125,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:32.52,1,1,1,460,69,1,<NO LOG>
+justlen8,mode-2AT,success,56434,225736,595540,1,0,83.18584070796462,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:17.58,2,1,1,365,12,2,<NO LOG>
+justlen8,mode-2AT,success,27139,108558,339226,1,0,84.95575221238938,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:16.67,1,1,1,334,13,1,<NO LOG>
+justlen8,mode-2AT,success,24856,99426,320605,0,0,85.84070796460178,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:15.01,1,1,1,334,9,1,<NO LOG>
+justlen8,mode-2AT,success,21811,87246,268542,3,0,81.41592920353983,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:15.24,1,1,1,323,9,1,<NO LOG>
+justlen8,mode-2AT,success,37245,148980,781219,6,0,83.18584070796462,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:20.44,1,1,1,406,21,1,<NO LOG>
+justlen8,mode-2AT,success,41120,164480,1166171,7,0,87.61061946902656,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:24.01,2,1,1,433,28,4,<NO LOG>
+justlen8,mode-2AT,success,34791,139164,1155913,9,0,87.61061946902656,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:23.80,1,1,1,409,33,2,<NO LOG>
+justlen8,mode-2AT,success,39000,156002,978611,7,0,87.61061946902656,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:20.33,2,1,1,407,25,2,<NO LOG>
+justlen8,mode-2AT,success,30470,121883,606943,3,0,85.84070796460178,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:19.58,1,1,1,381,20,2,<NO LOG>
+justlen8,mode-2AT,success,27211,108844,355713,3,0,87.61061946902656,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:15.64,1,1,1,346,9,1,<NO LOG>
+multi_gen_10,mode-2AT,success,24174,96696,84515738,871,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,14:59.24,1,1,1,360,3496,1,<NO LOG>
+multi_gen_10,mode-2AT,success,19858,79435,159193144,2005,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,33:55.57,1,1,1,381,8016,1,<NO LOG>
+multi_gen_10,mode-2AT,success,20646,82585,65848851,798,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,13:46.94,1,1,1,456,3189,1,<NO LOG>
+multi_gen_10,mode-2AT,success,20995,83981,196513688,2338,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,39:38.42,1,1,1,433,9360,1,<NO LOG>
+multi_gen_10,mode-2AT,success,24032,96128,78083417,810,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,14:00.83,1,1,1,383,3249,1,<NO LOG>
+multi_gen_10,mode-2AT,success,19728,78913,42958248,545,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,9:32.09,1,1,1,360,2177,1,<NO LOG>
+multi_gen_10,mode-2AT,success,23663,94655,84086512,889,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,15:12.97,1,1,1,397,3553,1,<NO LOG>
+multi_gen_10,mode-2AT,success,21312,85248,77773706,913,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,15:37.88,1,1,1,370,3649,1,<NO LOG>
+multi_gen_10,mode-2AT,success,21822,87291,84765292,968,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,16:41.75,1,1,1,443,3884,1,<NO LOG>
+multi_gen_10,mode-2AT,success,23097,92388,56564897,610,0,93.51351351351352,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,10:38.91,1,1,1,384,2449,1,<NO LOG>
+multi_gen_2,mode-2AT,success,33334,133337,515941,4,0,79.59183673469389,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:15.31,1,1,1,55,16,2,<NO LOG>
+multi_gen_2,mode-2AT,success,33101,132406,446006,2,0,77.55102040816327,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:15.27,1,1,1,49,14,2,<NO LOG>
+multi_gen_2,mode-2AT,success,34005,136020,393422,4,0,77.55102040816327,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:14.00,1,1,1,51,13,1,<NO LOG>
+multi_gen_2,mode-2AT,success,29416,117665,476260,2,0,75.51020408163265,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:14.94,1,1,1,51,17,2,<NO LOG>
+multi_gen_2,mode-2AT,success,38668,154673,455208,3,0,71.42857142857143,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:15.27,1,1,1,43,13,2,<NO LOG>
+multi_gen_2,mode-2AT,success,41299,165197,408571,2,0,73.46938775510205,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:14.15,1,1,1,50,11,3,<NO LOG>
+multi_gen_2,mode-2AT,success,36226,144904,449683,3,0,77.55102040816327,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:15.70,1,1,1,50,14,4,<NO LOG>
+multi_gen_2,mode-2AT,success,29408,117633,483562,5,0,75.51020408163265,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:14.59,1,1,1,56,17,2,<NO LOG>
+multi_gen_2,mode-2AT,success,25576,102307,631416,4,0,79.59183673469389,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:17.42,1,1,1,56,25,3,<NO LOG>
+multi_gen_2,mode-2AT,success,26408,105634,544994,6,0,77.55102040816327,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:16.34,1,1,1,58,21,1,<NO LOG>
+multi_gen_3,mode-2AT,success,32491,129967,1329465,11,0,91.07142857142857,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:22.10,1,1,1,90,41,1,<NO LOG>
+multi_gen_3,mode-2AT,success,26459,105838,1083207,11,0,91.07142857142857,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:21.02,1,1,1,79,41,1,<NO LOG>
+multi_gen_3,mode-2AT,success,34762,139048,1283009,7,0,91.07142857142857,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:22.28,1,1,1,89,37,4,<NO LOG>
+multi_gen_3,mode-2AT,success,32187,128751,1053370,9,0,91.07142857142857,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:20.74,1,1,1,87,33,3,<NO LOG>
+multi_gen_3,mode-2AT,success,32399,129597,1721302,14,0,91.07142857142857,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:25.79,1,1,1,98,53,3,<NO LOG>
+multi_gen_3,mode-2AT,success,27626,110507,904595,9,0,91.07142857142857,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:19.03,1,1,1,73,33,1,<NO LOG>
+multi_gen_3,mode-2AT,success,26198,104794,1389385,14,0,91.07142857142857,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:24.95,1,1,1,92,53,1,<NO LOG>
+multi_gen_3,mode-2AT,success,34795,139180,1187831,7,0,91.07142857142857,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:21.12,1,1,1,78,34,2,<NO LOG>
+multi_gen_3,mode-2AT,success,30966,123866,1019592,9,0,91.07142857142857,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:19.12,1,1,1,91,33,1,<NO LOG>
+multi_gen_3,mode-2AT,success,34184,136739,1198867,7,0,91.07142857142857,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:21.14,1,1,1,78,35,2,<NO LOG>
+multi_gen_4,mode-2AT,success,37806,151225,2916933,20,0,90.0,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:32.81,1,1,1,136,77,1,<NO LOG>
+multi_gen_4,mode-2AT,success,33592,134371,3532385,24,0,91.25,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:39.27,1,1,1,126,105,1,<NO LOG>
+multi_gen_4,mode-2AT,success,32987,131951,3605202,25,0,90.0,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:39.31,1,1,1,125,109,1,<NO LOG>
+multi_gen_4,mode-2AT,success,31503,126014,2811099,23,0,90.0,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:34.87,1,1,1,119,89,1,<NO LOG>
+multi_gen_4,mode-2AT,success,30369,121478,1979577,17,0,90.0,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:28.77,1,1,1,101,65,1,<NO LOG>
+multi_gen_4,mode-2AT,success,33680,134721,3671768,25,0,90.0,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:40.91,1,1,1,132,109,4,<NO LOG>
+multi_gen_4,mode-2AT,success,31909,127637,1822749,15,0,90.0,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:26.77,1,1,1,113,57,1,<NO LOG>
+multi_gen_4,mode-2AT,success,33008,132035,1890300,15,0,90.0,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:26.70,1,1,1,125,57,1,<NO LOG>
+multi_gen_4,mode-2AT,success,31013,124055,2519977,21,0,90.0,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:33.37,1,1,1,143,81,1,<NO LOG>
+multi_gen_4,mode-2AT,success,30595,122383,2606645,22,0,90.0,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:35.04,1,1,1,137,85,2,<NO LOG>
+multi_gen_5,mode-2AT,success,32903,131614,4125296,32,0,82.56880733944953,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:45.73,1,1,1,129,125,1,<NO LOG>
+multi_gen_5,mode-2AT,success,32298,129193,4171783,33,0,82.56880733944953,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:47.53,1,1,1,156,129,1,<NO LOG>
+multi_gen_5,mode-2AT,success,35275,141100,3641546,27,0,82.56880733944953,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:40.40,1,1,1,156,103,1,<NO LOG>
+multi_gen_5,mode-2AT,success,31794,127179,4622595,37,0,83.48623853211008,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:49.40,1,1,1,134,145,1,<NO LOG>
+multi_gen_5,mode-2AT,success,29753,119014,3967013,34,0,82.56880733944953,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:46.76,1,1,1,149,133,1,<NO LOG>
+multi_gen_5,mode-2AT,success,33638,134554,4446903,33,0,82.56880733944953,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:48.20,1,1,1,159,132,2,<NO LOG>
+multi_gen_5,mode-2AT,success,32237,128951,4032520,29,0,82.56880733944953,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:45.41,1,1,1,172,125,1,<NO LOG>
+multi_gen_5,mode-2AT,success,36415,145663,3094746,19,0,82.56880733944953,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:35.45,1,1,1,143,85,1,<NO LOG>
+multi_gen_5,mode-2AT,success,32824,131298,3817788,29,0,82.56880733944953,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:43.38,1,1,1,164,116,2,<NO LOG>
+multi_gen_5,mode-2AT,success,30793,123173,3976404,30,0,82.56880733944953,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:46.66,1,1,1,161,129,1,<NO LOG>
+multi_gen_6,mode-2AT,success,25611,102447,8640163,85,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:41.66,1,1,1,245,337,1,<NO LOG>
+multi_gen_6,mode-2AT,success,29054,116219,8355391,70,0,89.65517241379311,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",1:29.94,1,1,1,252,287,2,<NO LOG>
+multi_gen_6,mode-2AT,success,24379,97519,7980420,83,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:38.68,1,1,1,263,327,1,<NO LOG>
+multi_gen_6,mode-2AT,success,32118,128474,6850588,54,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:08.34,1,1,1,204,213,1,<NO LOG>
+multi_gen_6,mode-2AT,success,25098,100392,6858245,69,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:24.28,1,1,1,210,273,1,<NO LOG>
+multi_gen_6,mode-2AT,success,30895,123583,8442851,66,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:24.97,1,1,1,238,273,1,<NO LOG>
+multi_gen_6,mode-2AT,success,29485,117942,4844126,39,0,89.65517241379311,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:57.07,1,1,1,189,164,2,<NO LOG>
+multi_gen_6,mode-2AT,success,26987,107949,6411768,60,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:12.50,1,1,1,200,237,1,<NO LOG>
+multi_gen_6,mode-2AT,success,28959,115836,6475194,57,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:11.59,1,1,1,229,223,1,<NO LOG>
+multi_gen_6,mode-2AT,success,28936,115745,7449350,65,0,88.79310344827587,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:19.99,1,1,1,244,257,1,<NO LOG>
+multi_gen_7,mode-2AT,success,28261,113046,15855248,138,0,93.23308270676691,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",2:40.17,1,1,1,258,561,2,<NO LOG>
+multi_gen_7,mode-2AT,success,22907,91629,8365375,89,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:49.40,1,1,1,194,365,1,<NO LOG>
+multi_gen_7,mode-2AT,success,29304,117218,8949903,77,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:32.50,1,1,1,203,305,1,<NO LOG>
+multi_gen_7,mode-2AT,success,22706,90824,8109179,90,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:46.20,1,1,1,171,357,1,<NO LOG>
+multi_gen_7,mode-2AT,success,27703,110815,9786053,89,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:46.96,1,1,1,179,353,1,<NO LOG>
+multi_gen_7,mode-2AT,success,23196,92784,7820719,82,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:42.25,1,1,1,209,337,1,<NO LOG>
+multi_gen_7,mode-2AT,success,24426,97707,9799411,101,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:57.50,1,1,1,180,401,1,<NO LOG>
+multi_gen_7,mode-2AT,success,28647,114588,8749174,77,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:32.26,1,1,1,188,305,1,<NO LOG>
+multi_gen_7,mode-2AT,success,25201,100805,9508902,95,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:50.16,1,1,1,162,377,1,<NO LOG>
+multi_gen_7,mode-2AT,success,29205,116823,17912980,154,0,92.48120300751879,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,2:52.35,1,1,1,267,613,1,<NO LOG>
+multi_gen_8,mode-2AT,success,27705,110822,12562990,114,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,2:12.71,1,1,1,222,453,1,<NO LOG>
+multi_gen_8,mode-2AT,success,28084,112336,15989676,143,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,2:42.03,1,1,1,209,569,1,<NO LOG>
+multi_gen_8,mode-2AT,success,23939,95757,23301218,244,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,4:24.43,1,1,1,241,973,1,<NO LOG>
+multi_gen_8,mode-2AT,success,24049,96198,13787985,144,0,87.35632183908046,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,2:43.26,1,1,1,207,573,1,<NO LOG>
+multi_gen_8,mode-2AT,success,27765,111062,14588165,132,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,2:31.23,1,1,1,186,525,1,<NO LOG>
+multi_gen_8,mode-2AT,success,27487,109948,19828886,181,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,3:20.88,1,1,1,217,721,1,<NO LOG>
+multi_gen_8,mode-2AT,success,23754,95019,15421743,160,0,87.35632183908046,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,3:02.99,1,1,1,223,649,1,<NO LOG>
+multi_gen_8,mode-2AT,success,23075,92301,19594829,210,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,3:52.99,1,1,1,234,849,1,<NO LOG>
+multi_gen_8,mode-2AT,success,23605,94423,20803454,221,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,4:01.03,1,1,1,205,881,1,<NO LOG>
+multi_gen_8,mode-2AT,success,23890,95561,18954196,199,0,87.93103448275862,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,3:38.78,1,1,1,245,793,1,<NO LOG>
+multi_gen_9,mode-2AT,success,25014,100059,35057569,351,0,94.04761904761905,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,6:12.42,1,1,1,276,1401,1,<NO LOG>
+multi_gen_9,mode-2AT,success,21949,87797,28034962,320,0,94.04761904761905,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,5:40.24,1,1,1,231,1277,1,<NO LOG>
+multi_gen_9,mode-2AT,success,25557,102229,82837667,811,0,93.45238095238095,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,13:56.24,1,1,1,253,3241,1,<NO LOG>
+multi_gen_9,mode-2AT,success,25674,102699,29280822,285,0,94.04761904761905,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",5:05.02,1,1,1,204,1140,2,<NO LOG>
+multi_gen_9,mode-2AT,success,21996,87986,58532808,663,0,94.04761904761905,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,11:31.01,1,1,1,249,2661,1,<NO LOG>
+multi_gen_9,mode-2AT,success,23808,95235,131264936,1379,0,94.04761904761905,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,23:24.00,1,1,1,265,5513,1,<NO LOG>
+multi_gen_9,mode-2AT,success,26611,106447,49424896,465,0,94.64285714285715,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,8:06.34,1,1,1,253,1857,1,<NO LOG>
+multi_gen_9,mode-2AT,success,22276,89106,104012048,1165,0,94.04761904761905,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,19:50.04,1,1,1,228,4669,1,<NO LOG>
+multi_gen_9,mode-2AT,success,25295,101180,48392209,476,0,94.04761904761905,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,8:19.71,1,1,1,210,1913,1,<NO LOG>
+multi_man_complex_5,mode-2AT,success,22023,88095,3374176,39,0,82.08955223880596,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:51.13,1,1,1,137,153,2,<NO LOG>
+multi_man_complex_5,mode-2AT,success,26152,104609,6518999,63,0,81.34328358208954,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:17.26,1,1,1,190,249,1,<NO LOG>
+multi_man_complex_5,mode-2AT,success,24139,96557,7007573,71,0,82.08955223880596,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",1:29.55,1,1,1,184,290,3,<NO LOG>
+multi_man_complex_5,mode-2AT,success,23685,94741,7226520,74,0,82.08955223880596,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",1:32.39,1,1,1,193,305,3,<NO LOG>
+multi_man_complex_5,mode-2AT,success,26759,107039,6133812,58,0,82.08955223880596,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",1:10.77,1,1,1,165,229,2,<NO LOG>
+multi_man_complex_5,mode-2AT,success,23066,92267,5470373,57,0,82.83582089552239,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",1:14.55,1,1,1,202,237,2,<NO LOG>
+multi_man_complex_5,mode-2AT,success,25229,100919,4067272,41,0,82.08955223880596,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:54.04,1,1,1,158,161,2,<NO LOG>
+multi_man_complex_5,mode-2AT,success,27158,108635,3290694,31,0,82.08955223880596,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:43.57,1,1,1,138,121,2,<NO LOG>
+multi_man_complex_5,mode-2AT,success,27512,110050,2509398,23,0,80.59701492537313,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:36.05,1,1,1,123,91,1,<NO LOG>
+multi_man_complex_5,mode-2AT,success,24112,96449,5045874,53,0,81.34328358208954,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,1:06.29,1,1,1,168,209,1,<NO LOG>
+multi_man_complex_7,mode-2AT,success,20151,80607,103935710,1290,0,88.88888888888889,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",22:03.38,1,1,1,427,5157,4,<NO LOG>
+multi_man_complex_7,mode-2AT,success,19226,76907,88994184,1158,0,88.23529411764706,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,19:55.47,1,1,1,574,4629,1,<NO LOG>
+multi_man_complex_7,mode-2AT,success,22130,88522,116160637,1313,0,88.23529411764706,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,22:23.09,1,1,1,489,5249,1,<NO LOG>
+multi_man_complex_7,mode-2AT,success,23555,94222,41334658,440,0,89.54248366013071,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",7:43.99,1,1,1,422,1755,3,<NO LOG>
+multi_man_complex_7,mode-2AT,success,21756,87025,103315256,1188,0,88.88888888888889,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",20:14.38,1,1,1,487,4749,2,<NO LOG>
+multi_man_complex_7,mode-2AT,success,20962,83849,99045521,1182,0,88.88888888888889,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",20:14.41,1,1,1,501,4725,2,<NO LOG>
+multi_man_complex_7,mode-2AT,success,21798,87192,101332824,1163,0,88.23529411764706,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,19:51.19,1,1,1,446,4649,1,<NO LOG>
+multi_man_complex_7,mode-2AT,success,19969,79877,99543232,1247,0,88.23529411764706,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,21:26.08,1,1,1,537,4985,1,<NO LOG>
+multi_man_complex_7,mode-2AT,success,19090,76362,90423018,1185,0,88.23529411764706,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,20:18.58,1,1,1,419,4737,1,<NO LOG>
+multi_man_complex_7,mode-2AT,success,22807,91230,103930738,1140,0,88.23529411764706,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",19:30.85,1,1,1,453,4557,2,<NO LOG>
+multi_man_complex_9,mode-2AT,success,23024,92099,120213471,1306,0,92.1875,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",22:18.86,1,1,1,504,5221,2,<NO LOG>
+multi_man_complex_9,mode-2AT,success,22295,89183,131214174,1472,0,92.1875,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",25:06.13,1,1,1,508,5885,3,<NO LOG>
+multi_man_complex_9,mode-2AT,success,22763,91054,121329254,1331,0,91.66666666666667,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",22:42.23,1,1,1,533,5330,2,<NO LOG>
+multi_man_complex_9,mode-2AT,success,22268,89075,136396203,1532,0,91.66666666666667,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",26:00.43,1,1,1,510,6125,2,<NO LOG>
+multi_man_complex_9,mode-2AT,success,23103,92413,108237677,1169,0,91.14583333333334,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,20:04.71,1,1,1,524,4685,1,<NO LOG>
+multi_man_complex_9,mode-2AT,success,20610,82441,117255547,1423,0,91.66666666666667,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,24:16.54,1,1,1,450,5689,1,<NO LOG>
+multi_man_complex_9,mode-2AT,success,22729,90919,119582255,1316,0,91.14583333333334,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,22:21.93,1,1,1,449,5261,1,<NO LOG>
+multi_man_complex_9,mode-2AT,success,20395,81581,112194675,1373,0,91.66666666666667,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",23:28.92,1,1,1,528,5501,3,<NO LOG>
+multi_man_complex_9,mode-2AT,success,27957,111828,106370192,949,0,91.66666666666667,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,16:16.79,1,1,1,466,3805,1,<NO LOG>
+multi_man_complex_9,mode-2AT,success,24244,96977,118820552,1226,0,92.1875,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",20:52.13,1,1,1,477,4901,3,<NO LOG>
+multi_simple_10,mode-2AT,success,32351,129405,1976023,16,0,86.66666666666666,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:26.75,1,1,1,105,61,1,<NO LOG>
+multi_simple_10,mode-2AT,success,32559,130239,1862234,15,0,86.66666666666666,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:25.03,1,1,1,96,57,1,<NO LOG>
+multi_simple_10,mode-2AT,success,33121,132485,2625158,19,0,86.66666666666666,"[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d
+[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d",0:31.29,1,1,1,101,79,2,<NO LOG>
+multi_simple_10,mode-2AT,success,35643,142574,2178692,16,0,86.66666666666666,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:26.27,1,1,1,103,61,1,<NO LOG>
+multi_simple_10,mode-2AT,success,32413,129652,2109082,17,0,87.61904761904762,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:27.48,1,1,1,85,65,1,<NO LOG>
+multi_simple_10,mode-2AT,success,32079,128316,2475106,20,0,87.61904761904762,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:30.66,1,1,1,110,77,1,<NO LOG>
+multi_simple_10,mode-2AT,success,31732,126931,2067893,17,0,88.57142857142857,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:27.57,1,1,1,87,65,1,<NO LOG>
+multi_simple_10,mode-2AT,success,31372,125491,2421048,20,0,87.61904761904762,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:30.26,1,1,1,103,77,1,<NO LOG>
+multi_simple_10,mode-2AT,success,33633,134535,2729683,21,0,86.66666666666666,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:32.08,1,1,1,116,81,1,<NO LOG>
+multi_simple_10,mode-2AT,success,31145,124582,2153666,18,0,87.61904761904762,[BUG] controlled selfdestruct | selfdestruct to attacker 0xc04689c0c5d48cec7275152b3026b53f6f78d03d,0:28.67,1,1,1,94,69,1,<NO LOG>

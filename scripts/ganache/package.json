@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "ganache": "^7.0.3",
+    "solc": "^0.7.6",
+    "web3": "^1.7.1"
+  },
+  "name": "efcf-attack-contract",
+  "version": "1.0.0",
+  "description": "Send derived attack contract (from EF/CF test cases) to the ganache forked blockchain to verify false positives.",
+  "main": "launch-attack.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}

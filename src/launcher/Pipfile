@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "efcfuzz"
+
+[packages]
+requests = "*"
+coloredlogs = "*"
+py-solc-x = "*"
+tqdm = "*"
+eth-utils = {extras = ["pycryptodome"], version = "*"}
+efcfuzz = {editable = true, path = "."}
+eth-hash = {extras = ["pycryptodome"], version = "*"}
+msgpack = "*"
+
+[dev-packages]
+types-requests = "*"

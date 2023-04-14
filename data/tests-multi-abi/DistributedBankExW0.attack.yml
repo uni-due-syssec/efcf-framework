@@ -1,0 +1,39 @@
+---
+number: 0
+difficulty: 0
+gas_limit: 0
+timestamp: 0
+initial_ether: 10000
+txs:
+  - length: 4
+    return_count: 0
+    receiver_select: 0
+    sender_select: 0
+    block_advance: 0
+    call_value: 10000
+    input: "0xd0e30db0"
+    returns: []
+  - length: 36
+    return_count: 1
+    receiver_select: 0
+    sender_select: 0
+    block_advance: 0
+    call_value: 0
+    input: "0x2e1a7d4d0000000000000000000000000000000000000000000000000000000000002710"
+    returns:
+      - value: 1
+        reenter: 1
+        data_length: 0
+        data: "0x"
+  - length: 36
+    return_count: 1
+    receiver_select: 1
+    sender_select: 0
+    block_advance: 0
+    call_value: 0
+    input: "0x2e1a7d4d0000000000000000000000000000000000000000000000000000000000002710"
+    returns:
+      - value: 1
+        reenter: 1
+        data_length: 32
+        data: "0x0000000000000000000000000000000000000000000000000000000000000000"

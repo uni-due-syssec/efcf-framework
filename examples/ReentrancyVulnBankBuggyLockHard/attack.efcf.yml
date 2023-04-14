@@ -1,0 +1,55 @@
+---
+number: 0
+difficulty: 0
+gas_limit: 0
+timestamp: 0
+initial_ether: 10376293541461622784
+txs:
+  - length: 68
+    return_count: 0
+    receiver_select: 0
+    sender_select: 2
+    block_advance: 0
+    call_value: 0
+    input: "0xf3c40c4b000000000000000000000000c04689c0c5d48cec7275152b3026b53f6f78d03d0000000000000000000000000000000000000000000000010000000000000000"
+    returns: []
+  - length: 4
+    return_count: 0
+    receiver_select: 0
+    sender_select: 2
+    block_advance: 0
+    call_value: 9223478848378213308
+    input: "0xd0e30db0"
+    returns: []
+  - length: 4
+    return_count: 1
+    receiver_select: 0
+    sender_select: 2
+    block_advance: 0
+    call_value: 0
+    input: "0x5fd8c710"
+    returns:
+      - value: 1
+        reenter: 1
+        data_length: 0
+        data: "0x"
+  - length: 68
+    return_count: 0
+    receiver_select: 0
+    sender_select: 0
+    block_advance: 0
+    call_value: 0
+    input: "0x01c6adc3000000000000000000000000c2018c3f08417e77b94fb541fed2bf1e09093edd0000000000000000000000000000000000000000000000010000000000000000"
+    returns: []
+  - length: 4
+    return_count: 1
+    receiver_select: 0
+    sender_select: 0
+    block_advance: 0
+    call_value: 0
+    input: "0x5fd8c710"
+    returns:
+      - value: 1
+        reenter: 0
+        data_length: 0
+        data: "0x"

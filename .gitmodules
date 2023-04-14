@@ -1,0 +1,16 @@
+[submodule "src/ethmutator"]
+	path = src/ethmutator
+	url = https://github.com/uni-due-syssec/efcf-ethmutator
+	branch = main
+[submodule "src/evm2cpp"]
+	path = src/evm2cpp
+	url = https://github.com/uni-due-syssec/efcf-evm2cpp
+	branch = main
+[submodule "src/eEVM"]
+	path = src/eEVM
+	url = https://github.com/uni-due-syssec/efcf-eEVM
+	branch = efcf
+[submodule "src/AFLplusplus"]
+	path = src/AFLplusplus
+	url = https://github.com/uni-due-syssec/efcf-AFLplusplus
+	branch = efcf-v3

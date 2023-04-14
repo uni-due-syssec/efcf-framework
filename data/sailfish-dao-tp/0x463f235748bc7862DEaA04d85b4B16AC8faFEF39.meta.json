@@ -1,0 +1,10 @@
+[
+    {
+        "ABI": "[{\"constant\":true,\"inputs\":[],\"name\":\"MinDeposit\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_am\",\"type\":\"uint256\"}],\"name\":\"CashOut\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"GetBal\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"Deposit\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_lib\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}]",
+        "ContractName": "PrivateBank",
+        "CompilerVersion": "v0.4.19+commit.c4cbbb05",
+        "OptimizationUsed": "0",
+        "Runs": "200",
+        "ConstructorArguments": "000000000000000000000000dbda6655f1da6a4cf9513e02a112051d0152fbe7"
+    }
+]

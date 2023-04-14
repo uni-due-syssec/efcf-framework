@@ -1,0 +1,10 @@
+[
+    {
+        "ABI": "[{\"constant\":false,\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"payable\":true,\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"_balances\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"TotalAmount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"destroy\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"payable\":true,\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"GetBonusWithdraw\",\"outputs\":[],\"payable\":true,\"type\":\"function\"},{\"inputs\":[],\"payable\":true,\"type\":\"constructor\"},{\"payable\":true,\"type\":\"fallback\"}]",
+        "ContractName": "weeWhoo",
+        "CompilerVersion": "v0.4.15+commit.bbb8e64f",
+        "OptimizationUsed": "0",
+        "Runs": "200",
+        "ConstructorArguments": ""
+    }
+]

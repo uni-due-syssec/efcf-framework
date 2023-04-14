@@ -1,0 +1,36 @@
+---
+number: 0
+difficulty: 0
+gas_limit: 0
+timestamp: 0
+initial_ether: 9223512774343131136
+txs:
+  - length: 4
+    return_count: 0
+    sender_select: 0
+    block_advance: 0
+    call_value: 9223442405598953472
+    input: "0xd0e30db0"
+    returns: []
+  - length: 36
+    return_count: 1
+    sender_select: 0
+    block_advance: 0
+    call_value: 0
+    input: "0x2e1a7d4d0000000000000000000000000000000000000000000000010000000000000000"
+    returns:
+      - value: 1
+        reenter: 1
+        data_length: 0
+        data: "0x"
+  - length: 36
+    return_count: 1
+    sender_select: 0
+    block_advance: 0
+    call_value: 0
+    input: "0x2e1a7d4d0000000000000000000000000000000000000000000000010000000000000000"
+    returns:
+      - value: 1
+        reenter: 0
+        data_length: 0
+        data: "0x"

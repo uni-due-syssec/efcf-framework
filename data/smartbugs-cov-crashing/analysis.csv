@@ -1,0 +1,20 @@
+address,true_alarm,live_reproducible,comment
+0xffd31e68bf7af89df862435a138615bd60abf574,N,N,reentrancy FP due to hard-coded EOA addresses
+0xcf5dfe6e2fa63af41e9c01df75e79d3fda69b5f3,?,Y,bug found on live state but might be unrealistic due to large timespan? not sure
+0xd0955bd45d5eef5bedce84a3471c825288a14b01,Y,N,transferFrom(self,self,X) yields in gains
+0xbb4f286f88881afff196f8170105ad91b6217e0b,M,Y,seems to be some kind of ponzi scheme
+0xfa0ccb7b23015e1afe28bf0dbd33a3448acf6f5d,M,?,seems to be some kind of ponzi scheme + 
+0x95cc9c7bf003d948dea3a5a95116f7fd9ca43778,N,Y,false positive due to forced ether send
+0x937da34b42027732531765a721bc028e49b0bcbe,M,Y,also some kind of ponzi scheme?
+0xf0a924661b0263e5ce12756d07f45b8668c53380,Y,incorrect constructor name
+0x6f6deb5db0c4994a8283a01d6cfeeb27fc3bbe9c,M,?,gambling contract
+0x6288c6b68f06b1a3fd231c9c1cb37113a531c912,M,?,just gives you money?
+0x544789c586ddaed07ffb23f41ca1334232cb1804,?,Y,idk seems complex.
+0x4fe2b959e0a093c58067e00c62add84820f7dc43,?,Y,idk seems complex. some arbitrage thing?
+0x4a5fc826441a16b86aa850b3ddc4b1bc02f21b6c,M,N,seems to be some kind of ponzi scheme
+0x3fb111fed284aea5e3db069fa12045d61f78668a,M,Y,seems to be some kind of ponzi scheme
+0x398bf07971475a020831d9c5e2ac24ff393b9862,?,Y,seems to be some kind of ponzi scheme
+0x29fe0248fe903e7cb6d7b71161e6d7233ae460e3,M,N,gambling contract
+0x1e5b407f511542b7ac7836319de139601c6fad02,?,Y,same as 0x544789c586ddaed07ffb23f41ca1334232cb1804
+0x1822435de9b923a7a8c4fbd2f6d0aa8f743d3010,M,N,gambling/ponzi scheme?
+0x0ab2c9e20aa31fd3a3728a86f2526cca06a2b76d,M,N,gambling contract

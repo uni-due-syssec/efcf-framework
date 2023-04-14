@@ -1,0 +1,8 @@
+The EF/CF framework consists of several components with varying licenses. See
+the respective components for their licenses:
+
+* AFLplusplus - see ./src/AFLplusplus/LICENSE - Apache License 2.0
+* ethmutator - see ./src/ethmutator/LICENSE - AGPLv3
+* eEVM - see ./src/eEVM/LICENSE - MIT
+* evm2cpp - see ./src/evm2cpp/LICENSE - GPLv3
+* efcfuzz launcher - see ./src/launcher/LICENSE - AGPLv3

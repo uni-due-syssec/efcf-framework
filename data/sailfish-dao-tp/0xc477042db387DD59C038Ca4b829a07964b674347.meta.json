@@ -1,0 +1,10 @@
+[
+    {
+        "ABI": "[{\"constant\":false,\"inputs\":[{\"name\":\"loan\",\"type\":\"address\"}],\"name\":\"registerLoan\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"loan\",\"type\":\"address\"},{\"name\":\"replaceA\",\"type\":\"uint256\"},{\"name\":\"replaceB\",\"type\":\"uint256\"}],\"name\":\"registerLoanReplaceDuplicated\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"loan\",\"type\":\"address\"},{\"name\":\"indexReplace\",\"type\":\"uint256\"}],\"name\":\"registerLoanReplace\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAllLoans\",\"outputs\":[{\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"loans\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"type\":\"function\"}]",
+        "ContractName": "LoanDirectory",
+        "CompilerVersion": "v0.4.15+commit.bbb8e64f",
+        "OptimizationUsed": "1",
+        "Runs": "200",
+        "ConstructorArguments": ""
+    }
+]

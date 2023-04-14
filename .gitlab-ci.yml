@@ -1,0 +1,316 @@
+stages:
+  - tarball
+  - docker-build
+  - tests
+
+before_script:
+  - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@git.uni-due.de/".insteadOf "ssh://git@git.uni-due.de"
+  - pushd src/eEVM; git submodule update --init; popd
+  - cd $CI_PROJECT_DIR
+
+variables:
+  RUST_BACKTRACE: full
+  GIT_SUBMODULE_STRATEGY: "normal"
+  USE_CACHE: "true"
+
+
+.buildah-build-arch:
+  stage: docker-build
+  allow_failure: true
+  image:
+    name: quay.io/buildah/stable
+
+  before_script:
+    - buildah version
+    - buildah login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+
+  script:
+    - set -x
+    - buildah build -f $CI_PROJECT_DIR/docker/arch.Dockerfile -t $CI_REGISTRY_IMAGE:arch-${CI_COMMIT_TAG:-$CI_COMMIT_REF_NAME}
+    - buildah push $CI_REGISTRY_IMAGE:arch-${CI_COMMIT_TAG:-$CI_COMMIT_REF_NAME}
+
+
+docker-build-arch:
+  extends: docker-build-ubuntu
+  script:
+    - set -x;
+    - >-
+       /kaniko/executor
+       --force
+       --cache=true --use-new-run
+       --context $CI_PROJECT_DIR
+       --dockerfile $CI_PROJECT_DIR/docker/arch.Dockerfile
+       --destination $CI_REGISTRY_IMAGE:arch-${CI_COMMIT_TAG:-$CI_COMMIT_REF_NAME}
+
+  only:
+    - tags
+
+docker-build-fedora:
+  extends: docker-build-ubuntu
+  script:
+    - set -x;
+    - >-
+       /kaniko/executor
+       --force
+       --cache=true --use-new-run
+       --context $CI_PROJECT_DIR
+       --dockerfile $CI_PROJECT_DIR/docker/fedora.Dockerfile
+       --destination $CI_REGISTRY_IMAGE:fedora-${CI_COMMIT_TAG:-$CI_COMMIT_REF_NAME}
+
+  only:
+    - tags
+
+docker-build-ubuntu-impish:
+  extends: docker-build-ubuntu
+  script:
+    - set -x;
+    - >-
+       /kaniko/executor
+       --force
+       --cache=true --use-new-run
+       --context $CI_PROJECT_DIR
+       --dockerfile $CI_PROJECT_DIR/docker/ubuntu.Dockerfile
+       --destination $CI_REGISTRY_IMAGE:impish-${CI_COMMIT_TAG:-$CI_COMMIT_REF_NAME
+       --build-arg UBUNTU_VERSION=impish
+       --build-arg LLVM_VERSION=13
+
+  only:
+    - tags
+
+docker-build-ubuntu:
+  stage: docker-build
+  allow_failure: false
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+
+  before_script:
+    - "mkdir -p /kaniko/.docker || true"
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+
+  script:
+    - set -x;
+    - >-
+       /kaniko/executor
+       --force
+       --cache=true --use-new-run
+       --context $CI_PROJECT_DIR
+       --dockerfile $CI_PROJECT_DIR/docker/ubuntu.Dockerfile
+       --destination $CI_REGISTRY_IMAGE:ubuntu-${CI_COMMIT_TAG:-$CI_COMMIT_REF_NAME}
+       --destination $CI_REGISTRY_IMAGE:${CI_COMMIT_TAG:-$CI_COMMIT_REF_NAME}
+
+  variables:
+    GIT_SUBMODULE_STRATEGY: "recursive"
+
+
+check-space-ubuntu-docker:
+  stage: tests
+  needs: ["docker-build-ubuntu"]
+  image: git.uni-due.de:6666/uni-due-syssec/projects/smart-contract-fuzzing/experiments:ubuntu-master
+  allow_failure: true
+
+  before_script:
+    - cd /opt
+    - wget -qO - https://github.com/bootandy/dust/releases/download/v0.8.0/dust-v0.8.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
+    - mv ./*/dust /usr/local/bin/
+    - rm -rf dust*.
+    - cd ${CI_PROJECT_DIR}
+
+  script:
+    - cd /
+    - dust
+
+anon-tarball:
+  stage: tarball
+  image: docker.io/archlinux:base-devel
+  before_script:
+    - pacman -Syu --noconfirm --needed sd ripgrep fd git
+    - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@git.uni-due.de/".insteadOf "ssh://git@git.uni-due.de"
+    - git reset --hard
+    - git submodule update --init
+    - cd src/eEVM && git submodule update --init
+    - cd $CI_PROJECT_DIR
+    - git reset --hard
+  script:
+    - mv ./scripts/anon-tarball.sh /tmp/
+    - bash /tmp/anon-tarball.sh
+  artifacts:
+    paths:
+      - "efcf-*.tar.xz"
+      - "../efcf-*.tar.xz"
+      - "$OUT_TARBALL"
+      - "../$OUT_TARBALL"
+      - "$CI_PROJECT_DIR/$OUT_TARBALL"
+    expire_in: 7 days
+  only:
+    - tags
+  variables:
+    GIT_STRATEGY: "clone"
+    GIT_SUBMODULE_STRATEGY: "normal"
+    EFCF_VERSION: "$CI_COMMIT_TAG-$CI_COMMIT_SHORT_SHA"
+    OUT_TARBALL: "efcf-$EFCF_VERSION.tar.xz"
+
+fuzz-basic-tests:
+  stage: tests
+  needs: ["docker-build-ubuntu"]
+  allow_failure: false
+
+  variables:
+    AFL_BENCH_UNTIL_CRASH: 1
+    FUZZING_TIME: 300
+    FUZZING_REPETITIONS: 3
+    AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES: "1"
+    GIT_STRATEGY: clone
+    GIT_SUBMODULE_STRATEGY: "normal"
+
+  image: git.uni-due.de:6666/uni-due-syssec/projects/smart-contract-fuzzing/experiments:ubuntu-master
+
+  script:
+    - cd src/eEVM && git submodule update --init
+    - cd $CI_PROJECT_DIR
+    - mkdir -p out/
+    - mkdir -p results/
+    - "# building tests"
+    - time ./scripts/build-tests.sh > out/build-tests.log 2>&1 || (tail out/build-tests.log && false)
+    - tail out/fuzz-tests.log
+    - "# fuzzing tests"
+    - time ./scripts/fuzz-tests.sh > out/fuzz-tests.log 2>&1 || (tail out/fuzz-tests.log && false)
+    - tail out/build-tests.log
+    - "# summary:"
+    - python3 ./scripts/summarize.py out/fuzz-tests-summary.csv results/fuzz-tests/
+
+  artifacts:
+    paths:
+      - out/build-tests.log
+      - out/fuzz-tests.log
+      - out/fuzz-tests-summary.csv
+    expire_in: 3 days
+
+  only:
+    - tags
+    - triggers
+    - schedules
+
+
+fuzz-wrapper-test:
+  stage: tests
+  needs: ["docker-build-ubuntu"]
+  allow_failure: false
+  image: git.uni-due.de:6666/uni-due-syssec/projects/smart-contract-fuzzing/experiments:ubuntu-master
+
+  script:
+    - mkdir -p out || true
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - mkdir -p "$EFCF_BUILD_CACHE"
+    - echo "using build cache $EFCF_BUILD_CACHE"
+    - command -v efcfuzz
+    - efcfuzz --verbose --version
+    - "# ==== testing fuzzing source code ===="
+    - efcfuzz --compress-builds n --verbose --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
+    - find ./out/basic_src_results/default/crashes/
+    - test -n "$(ls -A ./out/basic_src_results/default/crashes/)"
+    - pushd ./out/basic_src_results/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ==== testing fuzzing combined.json ===="
+    - pushd ./data/tests/; make basic.combined.json; popd
+    - efcfuzz --verbose --compress-builds n --until-crash --timeout $FUZZING_TIME --out ./out/basic_cj_results/ --bin-runtime ./data/tests/basic.combined.json
+    - find ./out/basic_cj_results/default/crashes/
+    - test -n "$(ls -A ./out/basic_cj_results/default/crashes/)"
+    - pushd ./out/basic_cj_results/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ==== testing fuzzing plain bin-runtime, abi and bin ===="
+    - pushd ./data/tests/; make basic; popd
+    - efcfuzz --verbose --compress-builds n --until-crash --timeout $FUZZING_TIME --out ./out/basic_bin_results/ --bin-runtime ./data/tests/basic.bin-runtime --bin-deploy ./data/tests/basic.bin --abi ./data/tests/basic.abi
+    - find ./out/basic_bin_results/default/crashes/
+    - test -n "$(ls -A ./out/basic_bin_results/default/crashes/)"
+    - pushd ./out/basic_bin_results/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ===== testing fuzzing source with properties ===="
+    - efcfuzz --verbose  --compress-builds n --until-crash --timeout $FUZZING_TIME --out ./out/harvey_baz/ --source ./data/properties-tests/harvey_baz.sol --properties ./data/properties-tests/harvey_baz.signatures
+    - find ./out/harvey_baz/default/crashes/
+    - test -n "$(ls -A ./out/harvey_baz/default/crashes/)"
+    - pushd ./out/harvey_baz/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ===== testing fuzzing source with event assertions ===="
+    - efcfuzz --verbose --compress-builds n --until-crash --timeout $FUZZING_TIME  --out ./out/funwithnumbers --event-assertions --source ./data/assertions-tests/verifyfunwithnumbers.sol
+    - find ./out/funwithnumbers/default/crashes/
+    - test -n "$(ls -A ./out/funwithnumbers/default/crashes/)"
+    - pushd ./out/funwithnumbers/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ===== testing fuzzing source with solidity panics ===="
+    - efcfuzz --verbose --compress-builds n --until-crash --timeout $FUZZING_TIME --out ./out/overflow --sol-assertions --source ./data/assertions-tests/overflow.sol
+    - find ./out/overflow/default/crashes/
+    - test -n "$(ls -A ./out/overflow/default/crashes/)"
+    - pushd ./out/overflow/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ==== testing fuzzing combined.json with compressed builds ===="
+    - pushd ./data/tests/; make basic basic.combined.json; popd
+    - efcfuzz --compress-builds y --verbose --until-crash --timeout $FUZZING_TIME --out ./out/basic_cj2_results/ --bin-runtime ./data/tests/basic.combined.json
+    - find ./out/basic_cj2_results/default/crashes/
+    - test -n "$(ls -A ./out/basic_cj2_results/default/crashes/)"
+    - pushd ./out/basic_cj2_results/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ==== testing fuzzing of not vulnerable contracts ===="
+    - efcfuzz --compress-builds n --verbose --until-crash --timeout 120 --out ./out/suicide_multitx_infeasible/ --source ./data/tests-not-vuln/suicide_multitx_infeasible.sol
+    - find ./out/suicide_multitx_infeasible/ || true
+    - test -z "$(ls -A ./out/suicide_multitx_infeasible/default/crashes/)"
+    - rm -rf "$EFCF_BUILD_CACHE"
+    - df -h . /tmp/ /dev/shm/
+    - "# ==== testing fuzzing with git repo removed (fallback to tarball) ===="
+    - ls -al $EFCF_INSTALL_DIR/ $EFCF_INSTALL_DIR/src/
+    - rm -rf $EFCF_INSTALL_DIR/.git
+    - pushd ./data/tests/; make basic basic.combined.json; popd
+    - efcfuzz --compress-builds n --verbose --until-crash --timeout $FUZZING_TIME --out ./out/basic_cj2_results/ --bin-runtime ./data/tests/basic.combined.json
+    - find ./out/basic_cj2_results/default/crashes/
+    - test -n "$(ls -A ./out/basic_cj2_results/default/crashes/)"
+    - pushd ./out/basic_cj2_results/
+    - ./r.sh ./default/crashes/id*
+    - popd
+    - rm -rf "$EFCF_BUILD_CACHE" || true
+
+  after_script:
+    - rm -rf "$EFCF_BUILD_CACHE" || true
+    - rm -rf "$EFCF_FUZZ_DIR" || true
+
+  variables:
+    AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES: "1"
+    EFCF_BUILD_CACHE: "$CI_PROJECT_DIR/efcf-build-cache"
+    EFCF_FUZZ_DIR: "$CI_PROJECT_DIR/efcf-fuzz-dir"
+    FUZZING_TIME: 420
+
+  artifacts:
+    paths:
+      - out/
+    expire_in: 3 days
+
+.fuzz-wrapper-gethdev-test:
+  extends: fuzz-wrapper-test
+
+  script:
+    - command -v efcfuzz
+    - efcfuzz --verbose --version
+    - command -v geth
+    - geth --version
+    - mkdir -p out || true
+    - "false # open todo"

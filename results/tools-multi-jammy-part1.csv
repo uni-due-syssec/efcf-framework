@@ -1,0 +1,937 @@
+tool,contract,txlength,trial,runtime,bugfound
+confuzzius,justlen,128,1,50635.491409,selfdestruct
+confuzzius,justlen,128,10,2355.772385,selfdestruct
+confuzzius,justlen,128,2,17315.331477,selfdestruct
+confuzzius,justlen,128,3,31375.889389,selfdestruct
+confuzzius,justlen,128,4,19000.837816,selfdestruct
+confuzzius,justlen,128,5,172832.024877,None
+confuzzius,justlen,128,6,79839.780936,selfdestruct
+confuzzius,justlen,128,7,6830.677052,selfdestruct
+confuzzius,justlen,128,8,4698.874186,selfdestruct
+confuzzius,justlen,128,9,18687.091279,selfdestruct
+confuzzius,justlen,256,1,172824.808152,None
+confuzzius,justlen,256,10,111298.587279,selfdestruct
+confuzzius,justlen,256,2,138016.351849,selfdestruct
+confuzzius,justlen,256,3,45892.018711,selfdestruct
+confuzzius,justlen,256,4,172804.225531,None
+confuzzius,justlen,256,5,8452.967808,selfdestruct
+confuzzius,justlen,256,6,172817.304852,None
+confuzzius,justlen,256,7,7171.21977,selfdestruct
+confuzzius,justlen,256,8,172815.022726,None
+confuzzius,justlen,256,9,13979.67877,selfdestruct
+confuzzius,justlen,64,1,32797.576503,selfdestruct
+confuzzius,justlen,64,10,20920.981013,selfdestruct
+confuzzius,justlen,64,2,19023.663305,selfdestruct
+confuzzius,justlen,64,3,14664.762649,selfdestruct
+confuzzius,justlen,64,4,162745.853998,selfdestruct
+confuzzius,justlen,64,5,1138.952919,selfdestruct
+confuzzius,justlen,64,6,11480.717653,selfdestruct
+confuzzius,justlen,64,7,687.411404,selfdestruct
+confuzzius,justlen,64,8,8701.25577,selfdestruct
+confuzzius,justlen,64,9,7548.789573,selfdestruct
+confuzzius,justlen,8,1,1067.354673,selfdestruct
+confuzzius,justlen,8,10,951.613923,selfdestruct
+confuzzius,justlen,8,2,203.077274,selfdestruct
+confuzzius,justlen,8,3,590.619957,selfdestruct
+confuzzius,justlen,8,4,592.730072,selfdestruct
+confuzzius,justlen,8,5,1106.435897,selfdestruct
+confuzzius,justlen,8,6,321.472394,selfdestruct
+confuzzius,justlen,8,7,178.157837,selfdestruct
+confuzzius,justlen,8,8,738.600765,selfdestruct
+confuzzius,justlen,8,9,1751.351566,selfdestruct
+confuzzius,multi_gen,10,1,172828.92561,None
+confuzzius,multi_gen,10,10,172834.029694,None
+confuzzius,multi_gen,10,2,172826.996327,None
+confuzzius,multi_gen,10,3,172826.341328,None
+confuzzius,multi_gen,10,4,172804.05217,None
+confuzzius,multi_gen,10,5,172837.600631,None
+confuzzius,multi_gen,10,6,172829.520042,None
+confuzzius,multi_gen,10,7,172829.548952,None
+confuzzius,multi_gen,10,8,172828.226834,None
+confuzzius,multi_gen,10,9,172828.23076,None
+confuzzius,multi_gen,2,1,6.394194,selfdestruct
+confuzzius,multi_gen,2,10,7.492842,selfdestruct
+confuzzius,multi_gen,2,2,23.898398,selfdestruct
+confuzzius,multi_gen,2,3,19.875623,selfdestruct
+confuzzius,multi_gen,2,4,64.60022,selfdestruct
+confuzzius,multi_gen,2,5,32.622368,selfdestruct
+confuzzius,multi_gen,2,6,3.794904,selfdestruct
+confuzzius,multi_gen,2,7,4.18866,selfdestruct
+confuzzius,multi_gen,2,8,19.506736,selfdestruct
+confuzzius,multi_gen,2,9,35.012997,selfdestruct
+confuzzius,multi_gen,3,1,26.770887,selfdestruct
+confuzzius,multi_gen,3,10,69.115006,selfdestruct
+confuzzius,multi_gen,3,2,11.581551,selfdestruct
+confuzzius,multi_gen,3,3,73.150922,selfdestruct
+confuzzius,multi_gen,3,4,117.824366,selfdestruct
+confuzzius,multi_gen,3,5,96.004337,selfdestruct
+confuzzius,multi_gen,3,6,19.61653,selfdestruct
+confuzzius,multi_gen,3,7,25.065861,selfdestruct
+confuzzius,multi_gen,3,8,46.97894,selfdestruct
+confuzzius,multi_gen,3,9,45.257626,selfdestruct
+confuzzius,multi_gen,4,1,2694.215429,selfdestruct
+confuzzius,multi_gen,4,10,1853.362553,selfdestruct
+confuzzius,multi_gen,4,2,172831.163754,None
+confuzzius,multi_gen,4,3,200.432298,selfdestruct
+confuzzius,multi_gen,4,4,126.942766,selfdestruct
+confuzzius,multi_gen,4,5,100.708371,selfdestruct
+confuzzius,multi_gen,4,6,198.875418,selfdestruct
+confuzzius,multi_gen,4,7,293.582806,selfdestruct
+confuzzius,multi_gen,4,8,49.018011,selfdestruct
+confuzzius,multi_gen,4,9,177.935347,selfdestruct
+confuzzius,multi_gen,5,1,172832.627591,None
+confuzzius,multi_gen,5,10,175.807473,selfdestruct
+confuzzius,multi_gen,5,2,1260.567278,selfdestruct
+confuzzius,multi_gen,5,3,2711.829504,selfdestruct
+confuzzius,multi_gen,5,4,5305.278324,selfdestruct
+confuzzius,multi_gen,5,5,97.089126,selfdestruct
+confuzzius,multi_gen,5,6,2294.458495,selfdestruct
+confuzzius,multi_gen,5,7,9116.614046,selfdestruct
+confuzzius,multi_gen,5,8,154.994112,selfdestruct
+confuzzius,multi_gen,5,9,574.02214,selfdestruct
+confuzzius,multi_gen,6,1,1962.699464,selfdestruct
+confuzzius,multi_gen,6,10,172835.098336,None
+confuzzius,multi_gen,6,2,172830.942955,None
+confuzzius,multi_gen,6,3,172817.312767,None
+confuzzius,multi_gen,6,4,172833.770354,None
+confuzzius,multi_gen,6,5,172834.426019,None
+confuzzius,multi_gen,6,6,172834.700129,None
+confuzzius,multi_gen,6,7,172831.734529,None
+confuzzius,multi_gen,6,8,71174.070891,selfdestruct
+confuzzius,multi_gen,6,9,172831.150778,None
+confuzzius,multi_gen,7,1,172828.054932,None
+confuzzius,multi_gen,7,10,52560.050484,selfdestruct
+confuzzius,multi_gen,7,2,25964.266602,selfdestruct
+confuzzius,multi_gen,7,3,172824.888959,None
+confuzzius,multi_gen,7,4,172828.999978,None
+confuzzius,multi_gen,7,5,128843.368176,selfdestruct
+confuzzius,multi_gen,7,6,172830.04167,None
+confuzzius,multi_gen,7,7,73912.143409,selfdestruct
+confuzzius,multi_gen,7,8,172824.630979,None
+confuzzius,multi_gen,7,9,172833.553474,None
+confuzzius,multi_gen,8,1,172833.469549,None
+confuzzius,multi_gen,8,10,172829.317566,None
+confuzzius,multi_gen,8,2,172827.674828,None
+confuzzius,multi_gen,8,3,172826.088195,None
+confuzzius,multi_gen,8,4,172827.251501,None
+confuzzius,multi_gen,8,5,172828.393628,None
+confuzzius,multi_gen,8,6,172827.498433,None
+confuzzius,multi_gen,8,7,172831.221321,None
+confuzzius,multi_gen,8,8,172828.258743,None
+confuzzius,multi_gen,8,9,172813.446114,None
+confuzzius,multi_gen,9,1,172825.467504,None
+confuzzius,multi_gen,9,10,172830.597139,None
+confuzzius,multi_gen,9,2,172826.556843,None
+confuzzius,multi_gen,9,3,172828.427969,None
+confuzzius,multi_gen,9,4,172830.636396,None
+confuzzius,multi_gen,9,5,172830.045228,None
+confuzzius,multi_gen,9,6,172829.192463,None
+confuzzius,multi_gen,9,7,172818.289435,None
+confuzzius,multi_gen,9,8,172825.668739,None
+confuzzius,multi_gen,9,9,172830.685305,None
+confuzzius,multi_man_complex,5,1,172835.274748,None
+confuzzius,multi_man_complex,5,10,172844.106347,None
+confuzzius,multi_man_complex,5,2,172834.865394,None
+confuzzius,multi_man_complex,5,3,172832.61575,None
+confuzzius,multi_man_complex,5,4,172834.543716,None
+confuzzius,multi_man_complex,5,5,172840.454387,None
+confuzzius,multi_man_complex,5,6,172835.200002,None
+confuzzius,multi_man_complex,5,7,172805.821666,None
+confuzzius,multi_man_complex,5,8,172832.238784,None
+confuzzius,multi_man_complex,5,9,172836.511547,None
+confuzzius,multi_man_complex,7,1,172829.182726,None
+confuzzius,multi_man_complex,7,10,172835.613544,None
+confuzzius,multi_man_complex,7,2,172832.839692,None
+confuzzius,multi_man_complex,7,3,172830.490747,None
+confuzzius,multi_man_complex,7,4,172832.760086,None
+confuzzius,multi_man_complex,7,5,172831.281122,None
+confuzzius,multi_man_complex,7,6,172831.401224,None
+confuzzius,multi_man_complex,7,7,172832.448767,None
+confuzzius,multi_man_complex,7,8,172830.785937,None
+confuzzius,multi_man_complex,7,9,172833.621975,None
+confuzzius,multi_man_complex,9,1,172823.703629,None
+confuzzius,multi_man_complex,9,10,172830.53972,None
+confuzzius,multi_man_complex,9,2,172827.517807,None
+confuzzius,multi_man_complex,9,3,172831.477999,None
+confuzzius,multi_man_complex,9,4,172831.244992,None
+confuzzius,multi_man_complex,9,5,172831.182876,None
+confuzzius,multi_man_complex,9,6,172822.315809,None
+confuzzius,multi_man_complex,9,7,172826.451881,None
+confuzzius,multi_man_complex,9,8,172825.887173,None
+confuzzius,multi_man_complex,9,9,172832.441466,None
+confuzzius,multi_simple,10,1,172841.870372,None
+confuzzius,multi_simple,10,10,172852.347742,None
+confuzzius,multi_simple,10,2,172839.769663,None
+confuzzius,multi_simple,10,3,172827.048548,None
+confuzzius,multi_simple,10,4,172843.986478,None
+confuzzius,multi_simple,10,5,172846.707724,None
+confuzzius,multi_simple,10,6,172832.378009,None
+confuzzius,multi_simple,10,7,109299.13325,selfdestruct
+confuzzius,multi_simple,10,8,172832.235923,None
+confuzzius,multi_simple,10,9,172850.731217,None
+confuzzius,multi_simple,9,1,8454.80625,selfdestruct
+confuzzius,multi_simple,9,10,1143.869153,selfdestruct
+confuzzius,multi_simple,9,2,1849.669202,selfdestruct
+confuzzius,multi_simple,9,3,16367.873065,selfdestruct
+confuzzius,multi_simple,9,4,7683.422258,selfdestruct
+confuzzius,multi_simple,9,5,27071.17361,selfdestruct
+confuzzius,multi_simple,9,6,15429.311225,selfdestruct
+confuzzius,multi_simple,9,7,23358.188533,selfdestruct
+confuzzius,multi_simple,9,8,3454.163352,selfdestruct
+confuzzius,multi_simple,9,9,5266.843513,selfdestruct
+echidna2,justlen,128,1,98.849603,echidna_oracle
+echidna2,justlen,128,10,151.694068,echidna_oracle
+echidna2,justlen,128,2,169.959614,echidna_oracle
+echidna2,justlen,128,3,127.411521,echidna_oracle
+echidna2,justlen,128,4,208.271986,echidna_oracle
+echidna2,justlen,128,5,119.630585,echidna_oracle
+echidna2,justlen,128,6,231.336023,echidna_oracle
+echidna2,justlen,128,7,245.239331,echidna_oracle
+echidna2,justlen,128,8,141.632975,echidna_oracle
+echidna2,justlen,128,9,135.935082,echidna_oracle
+echidna2,justlen,256,1,1538.190379,echidna_oracle
+echidna2,justlen,256,10,1105.943255,echidna_oracle
+echidna2,justlen,256,2,1002.592352,echidna_oracle
+echidna2,justlen,256,3,391.005596,echidna_oracle
+echidna2,justlen,256,4,485.079949,echidna_oracle
+echidna2,justlen,256,5,440.773724,echidna_oracle
+echidna2,justlen,256,6,1371.525951,echidna_oracle
+echidna2,justlen,256,7,530.190016,echidna_oracle
+echidna2,justlen,256,8,3600.512259,echidna_oracle
+echidna2,justlen,256,9,361.039331,echidna_oracle
+echidna2,justlen,64,1,74.028344,echidna_oracle
+echidna2,justlen,64,10,64.430667,echidna_oracle
+echidna2,justlen,64,2,67.305413,echidna_oracle
+echidna2,justlen,64,3,67.476969,echidna_oracle
+echidna2,justlen,64,4,61.296616,echidna_oracle
+echidna2,justlen,64,5,60.738654,echidna_oracle
+echidna2,justlen,64,6,110.934129,echidna_oracle
+echidna2,justlen,64,7,81.214296,echidna_oracle
+echidna2,justlen,64,8,70.020441,echidna_oracle
+echidna2,justlen,64,9,78.556947,echidna_oracle
+echidna2,justlen,8,1,10.49287,echidna_oracle
+echidna2,justlen,8,10,16.662732,echidna_oracle
+echidna2,justlen,8,2,12.413471,echidna_oracle
+echidna2,justlen,8,3,14.626544,echidna_oracle
+echidna2,justlen,8,4,12.320192,echidna_oracle
+echidna2,justlen,8,5,13.406185,echidna_oracle
+echidna2,justlen,8,6,14.825573,echidna_oracle
+echidna2,justlen,8,7,15.328337,echidna_oracle
+echidna2,justlen,8,8,14.826279,echidna_oracle
+echidna2,justlen,8,9,13.32299,echidna_oracle
+echidna2,multi_gen,10,1,172801.777651,None
+echidna2,multi_gen,10,10,172802.165246,None
+echidna2,multi_gen,10,2,172802.086625,None
+echidna2,multi_gen,10,3,172802.088052,None
+echidna2,multi_gen,10,4,172801.806556,None
+echidna2,multi_gen,10,5,172801.977026,None
+echidna2,multi_gen,10,6,172801.928057,None
+echidna2,multi_gen,10,7,172801.965892,None
+echidna2,multi_gen,10,8,172801.876077,None
+echidna2,multi_gen,10,9,172802.776647,None
+echidna2,multi_gen,2,1,487.806675,echidna_oracle
+echidna2,multi_gen,2,10,123.16869,echidna_oracle
+echidna2,multi_gen,2,2,128.455214,echidna_oracle
+echidna2,multi_gen,2,3,31.235607,echidna_oracle
+echidna2,multi_gen,2,4,24.456051,echidna_oracle
+echidna2,multi_gen,2,5,9.636181,echidna_oracle
+echidna2,multi_gen,2,6,31.195543,echidna_oracle
+echidna2,multi_gen,2,7,31.856313,echidna_oracle
+echidna2,multi_gen,2,8,46.105924,echidna_oracle
+echidna2,multi_gen,2,9,111.556557,echidna_oracle
+echidna2,multi_gen,3,1,103.92702,echidna_oracle
+echidna2,multi_gen,3,10,57.326838,echidna_oracle
+echidna2,multi_gen,3,2,216.696468,echidna_oracle
+echidna2,multi_gen,3,3,35.707051,echidna_oracle
+echidna2,multi_gen,3,4,439.555071,echidna_oracle
+echidna2,multi_gen,3,5,29.046061,echidna_oracle
+echidna2,multi_gen,3,6,18.756787,echidna_oracle
+echidna2,multi_gen,3,7,217.826631,echidna_oracle
+echidna2,multi_gen,3,8,212.727673,echidna_oracle
+echidna2,multi_gen,3,9,33.10742,echidna_oracle
+echidna2,multi_gen,4,1,37106.197218,echidna_oracle
+echidna2,multi_gen,4,10,172802.645601,None
+echidna2,multi_gen,4,2,10235.627127,echidna_oracle
+echidna2,multi_gen,4,3,36772.247347,echidna_oracle
+echidna2,multi_gen,4,4,172803.026344,None
+echidna2,multi_gen,4,5,1209.256316,echidna_oracle
+echidna2,multi_gen,4,6,151201.809665,echidna_oracle
+echidna2,multi_gen,4,7,172802.545147,None
+echidna2,multi_gen,4,8,125056.018772,echidna_oracle
+echidna2,multi_gen,4,9,79448.248013,echidna_oracle
+echidna2,multi_gen,5,1,172802.596771,None
+echidna2,multi_gen,5,10,172802.575701,None
+echidna2,multi_gen,5,2,45441.857944,echidna_oracle
+echidna2,multi_gen,5,3,172802.898176,None
+echidna2,multi_gen,5,4,69793.06846,echidna_oracle
+echidna2,multi_gen,5,5,172802.567295,None
+echidna2,multi_gen,5,6,122447.307408,echidna_oracle
+echidna2,multi_gen,5,7,37458.968618,echidna_oracle
+echidna2,multi_gen,5,8,2864.786017,echidna_oracle
+echidna2,multi_gen,5,9,172802.395918,None
+echidna2,multi_gen,6,1,50157.257844,echidna_oracle
+echidna2,multi_gen,6,10,34451.326406,echidna_oracle
+echidna2,multi_gen,6,2,172802.966918,None
+echidna2,multi_gen,6,3,172802.83742,None
+echidna2,multi_gen,6,4,172801.892805,None
+echidna2,multi_gen,6,5,16146.937658,echidna_oracle
+echidna2,multi_gen,6,6,172802.496574,None
+echidna2,multi_gen,6,7,172803.115827,None
+echidna2,multi_gen,6,8,172803.106649,None
+echidna2,multi_gen,6,9,172802.875905,None
+echidna2,multi_gen,7,1,12545.288026,echidna_oracle
+echidna2,multi_gen,7,10,57411.515956,echidna_oracle
+echidna2,multi_gen,7,2,95654.188375,echidna_oracle
+echidna2,multi_gen,7,3,83847.547845,echidna_oracle
+echidna2,multi_gen,7,4,149283.559918,echidna_oracle
+echidna2,multi_gen,7,5,51337.307593,echidna_oracle
+echidna2,multi_gen,7,6,62158.849197,echidna_oracle
+echidna2,multi_gen,7,7,31708.318033,echidna_oracle
+echidna2,multi_gen,7,8,29520.757941,echidna_oracle
+echidna2,multi_gen,7,9,102546.56907,echidna_oracle
+echidna2,multi_gen,8,1,172805.707406,None
+echidna2,multi_gen,8,10,172803.546172,None
+echidna2,multi_gen,8,2,172804.266896,None
+echidna2,multi_gen,8,3,172804.460543,None
+echidna2,multi_gen,8,4,172804.058592,None
+echidna2,multi_gen,8,5,172804.717867,None
+echidna2,multi_gen,8,6,172804.0464,None
+echidna2,multi_gen,8,7,172801.557508,None
+echidna2,multi_gen,8,8,172804.156884,None
+echidna2,multi_gen,8,9,172804.016297,None
+echidna2,multi_gen,9,1,172805.337155,None
+echidna2,multi_gen,9,10,172804.235191,None
+echidna2,multi_gen,9,2,172804.808226,None
+echidna2,multi_gen,9,3,172804.758817,None
+echidna2,multi_gen,9,4,172805.177709,None
+echidna2,multi_gen,9,5,172803.916839,None
+echidna2,multi_gen,9,6,172805.25624,None
+echidna2,multi_gen,9,7,172804.887377,None
+echidna2,multi_gen,9,8,172804.855553,None
+echidna2,multi_gen,9,9,172803.525957,None
+echidna2,multi_man_complex,5,1,172802.398323,None
+echidna2,multi_man_complex,5,10,172802.155705,None
+echidna2,multi_man_complex,5,2,172802.089975,None
+echidna2,multi_man_complex,5,3,172802.24957,None
+echidna2,multi_man_complex,5,4,172802.068777,None
+echidna2,multi_man_complex,5,5,172801.98868,None
+echidna2,multi_man_complex,5,6,172799.793642,None
+echidna2,multi_man_complex,5,7,172802.577392,None
+echidna2,multi_man_complex,5,8,172802.117539,None
+echidna2,multi_man_complex,5,9,172802.585665,None
+echidna2,multi_man_complex,7,1,172802.799796,None
+echidna2,multi_man_complex,7,10,172802.538466,None
+echidna2,multi_man_complex,7,2,172802.878013,None
+echidna2,multi_man_complex,7,3,172802.960928,None
+echidna2,multi_man_complex,7,4,172802.490095,None
+echidna2,multi_man_complex,7,5,172802.190363,None
+echidna2,multi_man_complex,7,6,172802.448894,None
+echidna2,multi_man_complex,7,7,172803.349255,None
+echidna2,multi_man_complex,7,8,172802.497578,None
+echidna2,multi_man_complex,7,9,172802.6769,None
+echidna2,multi_man_complex,9,1,172803.340963,None
+echidna2,multi_man_complex,9,10,172802.928763,None
+echidna2,multi_man_complex,9,2,172803.443427,None
+echidna2,multi_man_complex,9,3,172803.7823,None
+echidna2,multi_man_complex,9,4,172803.191395,None
+echidna2,multi_man_complex,9,5,172802.990386,None
+echidna2,multi_man_complex,9,6,172803.501518,None
+echidna2,multi_man_complex,9,7,172803.769672,None
+echidna2,multi_man_complex,9,8,172803.409829,None
+echidna2,multi_man_complex,9,9,172803.009455,None
+echidna2,multi_simple,10,1,13.286197,echidna_oracle
+echidna2,multi_simple,10,10,13.015552,echidna_oracle
+echidna2,multi_simple,10,2,13.846617,echidna_oracle
+echidna2,multi_simple,10,3,12.967106,echidna_oracle
+echidna2,multi_simple,10,4,13.39656,echidna_oracle
+echidna2,multi_simple,10,5,12.635782,echidna_oracle
+echidna2,multi_simple,10,6,12.096183,echidna_oracle
+echidna2,multi_simple,10,7,12.575152,echidna_oracle
+echidna2,multi_simple,10,8,13.916498,echidna_oracle
+echidna2,multi_simple,10,9,13.218433,echidna_oracle
+echidna2,multi_simple,9,1,10.226875,echidna_oracle
+echidna2,multi_simple,9,10,11.846355,echidna_oracle
+echidna2,multi_simple,9,2,13.846243,echidna_oracle
+echidna2,multi_simple,9,3,11.376967,echidna_oracle
+echidna2,multi_simple,9,4,10.96713,echidna_oracle
+echidna2,multi_simple,9,5,10.806929,echidna_oracle
+echidna2,multi_simple,9,6,11.465835,echidna_oracle
+echidna2,multi_simple,9,7,13.340317,echidna_oracle
+echidna2,multi_simple,9,8,11.706162,echidna_oracle
+echidna2,multi_simple,9,9,16.75572,echidna_oracle
+echidnaparade.p1_c4,justlen,128,1,109.743071,echidna_oracle
+echidnaparade.p1_c4,justlen,128,10,132.874072,echidna_oracle
+echidnaparade.p1_c4,justlen,128,2,124.879465,echidna_oracle
+echidnaparade.p1_c4,justlen,128,3,485.859103,echidna_oracle
+echidnaparade.p1_c4,justlen,128,4,116.082354,echidna_oracle
+echidnaparade.p1_c4,justlen,128,5,193.218723,echidna_oracle
+echidnaparade.p1_c4,justlen,128,6,304.622288,echidna_oracle
+echidnaparade.p1_c4,justlen,128,7,407.970257,echidna_oracle
+echidnaparade.p1_c4,justlen,128,8,276.394701,echidna_oracle
+echidnaparade.p1_c4,justlen,128,9,114.68035,echidna_oracle
+echidnaparade.p1_c4,justlen,256,1,611.032775,echidna_oracle
+echidnaparade.p1_c4,justlen,256,10,605.175216,echidna_oracle
+echidnaparade.p1_c4,justlen,256,2,607.1836,echidna_oracle
+echidnaparade.p1_c4,justlen,256,3,280.348759,echidna_oracle
+echidnaparade.p1_c4,justlen,256,4,813.999204,echidna_oracle
+echidnaparade.p1_c4,justlen,256,5,306.451615,echidna_oracle
+echidnaparade.p1_c4,justlen,256,6,304.545126,echidna_oracle
+echidnaparade.p1_c4,justlen,256,7,212.061698,echidna_oracle
+echidnaparade.p1_c4,justlen,256,8,253.564535,echidna_oracle
+echidnaparade.p1_c4,justlen,256,9,610.244576,echidna_oracle
+echidnaparade.p1_c4,justlen,64,1,124.37872,echidna_oracle
+echidnaparade.p1_c4,justlen,64,10,91.036845,echidna_oracle
+echidnaparade.p1_c4,justlen,64,2,89.705214,echidna_oracle
+echidnaparade.p1_c4,justlen,64,3,72.495332,echidna_oracle
+echidnaparade.p1_c4,justlen,64,4,82.577453,echidna_oracle
+echidnaparade.p1_c4,justlen,64,5,82.727067,echidna_oracle
+echidnaparade.p1_c4,justlen,64,6,107.961966,echidna_oracle
+echidnaparade.p1_c4,justlen,64,7,81.21405,echidna_oracle
+echidnaparade.p1_c4,justlen,64,8,74.113979,echidna_oracle
+echidnaparade.p1_c4,justlen,64,9,83.957859,echidna_oracle
+echidnaparade.p1_c4,justlen,8,1,22.578504,echidna_oracle
+echidnaparade.p1_c4,justlen,8,10,27.021263,echidna_oracle
+echidnaparade.p1_c4,justlen,8,2,35.591537,echidna_oracle
+echidnaparade.p1_c4,justlen,8,3,26.632039,echidna_oracle
+echidnaparade.p1_c4,justlen,8,4,19.340045,echidna_oracle
+echidnaparade.p1_c4,justlen,8,5,27.464935,echidna_oracle
+echidnaparade.p1_c4,justlen,8,6,32.465873,echidna_oracle
+echidnaparade.p1_c4,justlen,8,7,37.257679,echidna_oracle
+echidnaparade.p1_c4,justlen,8,8,15.916946,echidna_oracle
+echidnaparade.p1_c4,justlen,8,9,33.273914,echidna_oracle
+echidnaparade.p1_c4,multi_gen,10,1,172828.199885,None
+echidnaparade.p1_c4,multi_gen,10,10,172943.733086,None
+echidnaparade.p1_c4,multi_gen,10,2,172814.325024,None
+echidnaparade.p1_c4,multi_gen,10,3,172924.361578,None
+echidnaparade.p1_c4,multi_gen,10,4,172883.772408,None
+echidnaparade.p1_c4,multi_gen,10,5,172832.967201,None
+echidnaparade.p1_c4,multi_gen,10,6,172873.857516,None
+echidnaparade.p1_c4,multi_gen,10,7,172915.492514,None
+echidnaparade.p1_c4,multi_gen,10,8,172936.347794,None
+echidnaparade.p1_c4,multi_gen,10,9,172844.94733,None
+echidnaparade.p1_c4,multi_gen,2,1,43.789175,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,10,82.847813,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,2,19.380914,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,3,28.438826,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,4,39.694863,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,5,69.576246,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,6,31.844381,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,7,336.409139,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,8,21.823517,echidna_oracle
+echidnaparade.p1_c4,multi_gen,2,9,81.294323,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,1,268.097244,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,10,121.162822,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,2,373.738715,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,3,309.576106,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,4,409.775505,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,5,275.988532,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,6,176.893785,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,7,111.76098,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,8,200.397802,echidna_oracle
+echidnaparade.p1_c4,multi_gen,3,9,26.054011,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,1,63835.871479,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,10,172962.377112,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,2,20881.338174,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,3,3203.546791,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,4,56261.259741,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,5,76760.058168,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,6,18651.607659,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,7,15202.297127,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,8,3781.958604,echidna_oracle
+echidnaparade.p1_c4,multi_gen,4,9,14715.073308,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,1,9770.718878,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,10,2505.236926,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,2,13566.702896,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,3,10343.12457,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,4,4271.480145,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,5,23118.933226,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,6,4744.503708,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,7,41394.11489,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,8,30833.637005,echidna_oracle
+echidnaparade.p1_c4,multi_gen,5,9,20650.076623,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,1,75617.669674,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,10,2941.158068,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,2,26469.489308,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,3,4680.750654,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,4,113896.802766,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,5,79385.194557,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,6,3572.759847,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,7,91402.469075,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,8,18794.132501,echidna_oracle
+echidnaparade.p1_c4,multi_gen,6,9,66388.54642,echidna_oracle
+echidnaparade.p1_c4,multi_gen,7,1,4902.832957,echidna_oracle
+echidnaparade.p1_c4,multi_gen,7,10,172998.449783,None
+echidnaparade.p1_c4,multi_gen,7,2,14129.329215,echidna_oracle
+echidnaparade.p1_c4,multi_gen,7,3,21133.507753,echidna_oracle
+echidnaparade.p1_c4,multi_gen,7,4,172893.555693,None
+echidnaparade.p1_c4,multi_gen,7,5,2932.470328,echidna_oracle
+echidnaparade.p1_c4,multi_gen,7,6,6081.657001,echidna_oracle
+echidnaparade.p1_c4,multi_gen,7,7,5022.817592,echidna_oracle
+echidnaparade.p1_c4,multi_gen,7,8,172832.763584,None
+echidnaparade.p1_c4,multi_gen,7,9,938.707618,echidna_oracle
+echidnaparade.p1_c4,multi_gen,8,1,172908.1333,None
+echidnaparade.p1_c4,multi_gen,8,10,172947.944818,None
+echidnaparade.p1_c4,multi_gen,8,2,95577.294494,echidna_oracle
+echidnaparade.p1_c4,multi_gen,8,3,172893.293372,None
+echidnaparade.p1_c4,multi_gen,8,4,172887.985278,None
+echidnaparade.p1_c4,multi_gen,8,5,173088.74889,None
+echidnaparade.p1_c4,multi_gen,8,6,172867.128577,None
+echidnaparade.p1_c4,multi_gen,8,7,172897.769572,None
+echidnaparade.p1_c4,multi_gen,8,8,172907.292193,None
+echidnaparade.p1_c4,multi_gen,8,9,172897.999402,None
+echidnaparade.p1_c4,multi_gen,9,1,172916.320208,None
+echidnaparade.p1_c4,multi_gen,9,10,172943.773372,None
+echidnaparade.p1_c4,multi_gen,9,2,172943.525777,None
+echidnaparade.p1_c4,multi_gen,9,3,172898.347054,None
+echidnaparade.p1_c4,multi_gen,9,4,172868.940491,None
+echidnaparade.p1_c4,multi_gen,9,5,172808.178331,None
+echidnaparade.p1_c4,multi_gen,9,6,172894.925527,None
+echidnaparade.p1_c4,multi_gen,9,7,172917.796759,None
+echidnaparade.p1_c4,multi_gen,9,8,172907.300093,None
+echidnaparade.p1_c4,multi_gen,9,9,172924.076186,None
+echidnaparade.p1_c4,multi_man_complex,5,1,172816.658013,None
+echidnaparade.p1_c4,multi_man_complex,5,10,172923.648213,None
+echidnaparade.p1_c4,multi_man_complex,5,2,172953.338071,None
+echidnaparade.p1_c4,multi_man_complex,5,3,172885.798637,None
+echidnaparade.p1_c4,multi_man_complex,5,4,173051.068868,None
+echidnaparade.p1_c4,multi_man_complex,5,5,172810.518092,None
+echidnaparade.p1_c4,multi_man_complex,5,6,172823.196692,None
+echidnaparade.p1_c4,multi_man_complex,5,7,172925.804432,None
+echidnaparade.p1_c4,multi_man_complex,5,8,172804.936314,None
+echidnaparade.p1_c4,multi_man_complex,5,9,172842.613272,None
+echidnaparade.p1_c4,multi_man_complex,7,1,172923.85028,None
+echidnaparade.p1_c4,multi_man_complex,7,10,172904.566966,None
+echidnaparade.p1_c4,multi_man_complex,7,2,172806.94431,None
+echidnaparade.p1_c4,multi_man_complex,7,3,172853.679729,None
+echidnaparade.p1_c4,multi_man_complex,7,4,172836.282635,None
+echidnaparade.p1_c4,multi_man_complex,7,5,172827.960023,None
+echidnaparade.p1_c4,multi_man_complex,7,6,172924.587248,None
+echidnaparade.p1_c4,multi_man_complex,7,7,172880.424286,None
+echidnaparade.p1_c4,multi_man_complex,7,8,172895.300869,None
+echidnaparade.p1_c4,multi_man_complex,7,9,173044.84365,None
+echidnaparade.p1_c4,multi_man_complex,9,1,172902.028198,None
+echidnaparade.p1_c4,multi_man_complex,9,10,172857.083888,None
+echidnaparade.p1_c4,multi_man_complex,9,2,172837.615102,None
+echidnaparade.p1_c4,multi_man_complex,9,3,172844.665766,None
+echidnaparade.p1_c4,multi_man_complex,9,4,172861.919817,None
+echidnaparade.p1_c4,multi_man_complex,9,5,172868.744608,None
+echidnaparade.p1_c4,multi_man_complex,9,6,172962.776091,None
+echidnaparade.p1_c4,multi_man_complex,9,7,172931.937347,None
+echidnaparade.p1_c4,multi_man_complex,9,8,172911.83848,None
+echidnaparade.p1_c4,multi_man_complex,9,9,173047.274415,None
+echidnaparade.p1_c4,multi_simple,10,1,31.838142,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,10,26.433545,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,2,30.972899,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,3,28.855024,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,4,30.451292,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,5,27.662356,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,6,32.516057,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,7,26.040531,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,8,20.264913,echidna_oracle
+echidnaparade.p1_c4,multi_simple,10,9,22.35012,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,1,23.059581,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,10,22.419866,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,2,20.630008,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,3,20.581725,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,4,20.363645,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,5,22.792716,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,6,22.590523,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,7,24.403422,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,8,17.495926,echidna_oracle
+echidnaparade.p1_c4,multi_simple,9,9,18.897791,echidna_oracle
+maian,justlen,128,1,2121.822503,None
+maian,justlen,128,2,2098.056317,None
+maian,justlen,128,3,2138.358561,None
+maian,justlen,256,1,2122.900388,None
+maian,justlen,256,2,2138.72982,None
+maian,justlen,256,3,2111.219903,None
+maian,justlen,64,1,2214.119993,None
+maian,justlen,64,2,2230.593917,None
+maian,justlen,64,3,2214.069082,None
+maian,justlen,8,1,133.805425,Suicidal
+maian,justlen,8,2,147.535362,Suicidal
+maian,justlen,8,3,156.790427,Suicidal
+maian,multi_gen,10,1,431.544521,Suicidal
+maian,multi_gen,10,2,430.922614,Suicidal
+maian,multi_gen,10,3,455.53648,Suicidal
+maian,multi_gen,2,1,3.145204,Suicidal
+maian,multi_gen,2,2,4.544304,Suicidal
+maian,multi_gen,2,3,3.984007,Suicidal
+maian,multi_gen,3,1,4.888532,Suicidal
+maian,multi_gen,3,2,6.280427,Suicidal
+maian,multi_gen,3,3,6.191407,Suicidal
+maian,multi_gen,4,1,9.229453,Suicidal
+maian,multi_gen,4,2,12.164069,Suicidal
+maian,multi_gen,4,3,11.942862,Suicidal
+maian,multi_gen,5,1,22.166571,Suicidal
+maian,multi_gen,5,2,27.631671,Suicidal
+maian,multi_gen,5,3,26.916578,Suicidal
+maian,multi_gen,6,1,48.654571,Suicidal
+maian,multi_gen,6,2,54.90128,Suicidal
+maian,multi_gen,6,3,53.50512,Suicidal
+maian,multi_gen,7,1,113.197622,Suicidal
+maian,multi_gen,7,2,110.984705,Suicidal
+maian,multi_gen,7,3,113.486239,Suicidal
+maian,multi_gen,8,1,239.607968,Suicidal
+maian,multi_gen,8,2,236.906529,Suicidal
+maian,multi_gen,8,3,242.897362,Suicidal
+maian,multi_gen,9,1,202.626438,Suicidal
+maian,multi_gen,9,2,216.524998,Suicidal
+maian,multi_gen,9,3,204.329449,Suicidal
+maian,multi_man_complex,5,1,188.742691,Suicidal
+maian,multi_man_complex,5,2,162.867304,Suicidal
+maian,multi_man_complex,5,3,200.480597,Suicidal
+maian,multi_man_complex,7,1,3681.633612,Suicidal
+maian,multi_man_complex,7,2,4167.517333,Suicidal
+maian,multi_man_complex,7,3,3810.126758,Suicidal
+maian,multi_man_complex,9,1,12804.845472,None
+maian,multi_man_complex,9,2,12827.902137,None
+maian,multi_man_complex,9,3,11715.208792,None
+maian,multi_simple,10,1,24.100885,Suicidal
+maian,multi_simple,10,2,25.638541,Suicidal
+maian,multi_simple,10,3,29.948991,Suicidal
+maian,multi_simple,9,1,16.127939,Suicidal
+maian,multi_simple,9,2,16.325911,Suicidal
+maian,multi_simple,9,3,16.937018,Suicidal
+manticore,justlen,128,1,172801.886318,None
+manticore,justlen,128,2,172802.454502,None
+manticore,justlen,128,3,172803.417295,None
+manticore,justlen,256,1,172802.527356,None
+manticore,justlen,256,2,172802.713182,None
+manticore,justlen,256,3,172802.649765,None
+manticore,justlen,64,1,7715.505212,None
+manticore,justlen,64,2,7657.696496,None
+manticore,justlen,64,3,7568.197792,None
+manticore,justlen,8,1,172801.743226,None
+manticore,justlen,8,2,172802.476915,None
+manticore,justlen,8,3,172804.485894,None
+manticore,multi_gen,10,1,172800,None
+manticore,multi_gen,10,2,172800,None
+manticore,multi_gen,10,3,172800,None
+manticore,multi_gen,2,1,8.705692,echidna_oracle
+manticore,multi_gen,2,2,12.905361,echidna_oracle
+manticore,multi_gen,2,3,14.39438,echidna_oracle
+manticore,multi_gen,3,1,23.921781,echidna_oracle
+manticore,multi_gen,3,2,31.455992,echidna_oracle
+manticore,multi_gen,3,3,35.176279,echidna_oracle
+manticore,multi_gen,4,1,83.369091,echidna_oracle
+manticore,multi_gen,4,2,94.177017,echidna_oracle
+manticore,multi_gen,4,3,92.784017,echidna_oracle
+manticore,multi_gen,5,1,303.469388,echidna_oracle
+manticore,multi_gen,5,2,292.485509,echidna_oracle
+manticore,multi_gen,5,3,327.904899,echidna_oracle
+manticore,multi_gen,6,1,1575.374393,echidna_oracle
+manticore,multi_gen,6,2,1538.342899,echidna_oracle
+manticore,multi_gen,6,3,1557.603794,echidna_oracle
+manticore,multi_gen,7,1,2431.317594,echidna_oracle
+manticore,multi_gen,7,2,2375.931678,echidna_oracle
+manticore,multi_gen,7,3,2381.676682,echidna_oracle
+manticore,multi_gen,8,1,2181.053518,echidna_oracle
+manticore,multi_gen,8,2,2185.966556,echidna_oracle
+manticore,multi_gen,8,3,2066.924612,echidna_oracle
+manticore,multi_gen,9,1,2517.35291,echidna_oracle
+manticore,multi_gen,9,2,2413.3923,echidna_oracle
+manticore,multi_gen,9,3,2526.728,echidna_oracle
+manticore,multi_man_complex,5,1,212.311271,None
+manticore,multi_man_complex,5,2,208.290895,None
+manticore,multi_man_complex,5,3,204.103113,None
+manticore,multi_man_complex,7,1,320.308164,None
+manticore,multi_man_complex,7,2,313.551527,None
+manticore,multi_man_complex,7,3,318.870972,None
+manticore,multi_man_complex,9,1,432.742321,None
+manticore,multi_man_complex,9,2,435.928818,None
+manticore,multi_man_complex,9,3,422.522853,None
+manticore,multi_simple,10,1,121.653573,echidna_oracle
+manticore,multi_simple,10,2,114.775338,echidna_oracle
+manticore,multi_simple,10,3,120.552188,echidna_oracle
+manticore,multi_simple,9,1,79.170197,echidna_oracle
+manticore,multi_simple,9,2,76.186361,echidna_oracle
+manticore,multi_simple,9,3,78.044115,echidna_oracle
+manticore.c4,justlen,128,1,34153.585503,None
+manticore.c4,justlen,128,2,33526.778106,None
+manticore.c4,justlen,128,3,30951.666168,None
+manticore.c4,justlen,256,1,33943.257826,None
+manticore.c4,justlen,256,2,33592.167435,None
+manticore.c4,justlen,256,3,30926.088311,None
+manticore.c4,justlen,64,1,21381.39638,None
+manticore.c4,justlen,64,2,21041.481998,None
+manticore.c4,justlen,64,3,19319.538039,None
+manticore.c4,justlen,8,1,33975.117492,echidna_oracle
+manticore.c4,justlen,8,2,33879.894873,echidna_oracle
+manticore.c4,justlen,8,3,28823.240826,echidna_oracle
+manticore.c4,multi_gen,10,1,411.420376,None
+manticore.c4,multi_gen,10,2,399.083921,None
+manticore.c4,multi_gen,10,3,386.582049,None
+manticore.c4,multi_gen,2,1,8.384164,echidna_oracle
+manticore.c4,multi_gen,2,2,7.687702,echidna_oracle
+manticore.c4,multi_gen,2,3,7.934189,echidna_oracle
+manticore.c4,multi_gen,3,1,16.398598,echidna_oracle
+manticore.c4,multi_gen,3,2,14.783604,echidna_oracle
+manticore.c4,multi_gen,3,3,14.906119,echidna_oracle
+manticore.c4,multi_gen,4,1,44.150165,echidna_oracle
+manticore.c4,multi_gen,4,2,36.482209,echidna_oracle
+manticore.c4,multi_gen,4,3,37.560589,echidna_oracle
+manticore.c4,multi_gen,5,1,158.262413,echidna_oracle
+manticore.c4,multi_gen,5,2,125.947506,echidna_oracle
+manticore.c4,multi_gen,5,3,123.125212,echidna_oracle
+manticore.c4,multi_gen,6,1,1839.817833,echidna_oracle
+manticore.c4,multi_gen,6,2,1650.035816,echidna_oracle
+manticore.c4,multi_gen,6,3,1571.22942,echidna_oracle
+manticore.c4,multi_gen,7,1,2362.890508,echidna_oracle
+manticore.c4,multi_gen,7,2,2234.87768,echidna_oracle
+manticore.c4,multi_gen,7,3,2200.677693,echidna_oracle
+manticore.c4,multi_gen,8,1,3356.737394,echidna_oracle
+manticore.c4,multi_gen,8,2,3132.954627,echidna_oracle
+manticore.c4,multi_gen,8,3,2905.082876,echidna_oracle
+manticore.c4,multi_gen,9,1,3790.648559,echidna_oracle
+manticore.c4,multi_gen,9,2,3841.292493,echidna_oracle
+manticore.c4,multi_gen,9,3,3601.13963,echidna_oracle
+manticore.c4,multi_man_complex,5,1,101.457315,None
+manticore.c4,multi_man_complex,5,2,97.681013,None
+manticore.c4,multi_man_complex,5,3,90.207266,None
+manticore.c4,multi_man_complex,7,1,159.186317,None
+manticore.c4,multi_man_complex,7,2,150.8917,None
+manticore.c4,multi_man_complex,7,3,142.483146,None
+manticore.c4,multi_man_complex,9,1,290.868292,None
+manticore.c4,multi_man_complex,9,2,240.160594,None
+manticore.c4,multi_man_complex,9,3,229.255663,None
+manticore.c4,multi_simple,10,1,67.607694,echidna_oracle
+manticore.c4,multi_simple,10,2,66.863134,echidna_oracle
+manticore.c4,multi_simple,10,3,67.312024,echidna_oracle
+manticore.c4,multi_simple,9,1,48.850246,echidna_oracle
+manticore.c4,multi_simple,9,2,46.852585,echidna_oracle
+manticore.c4,multi_simple,9,3,44.648036,echidna_oracle
+smartian,justlen,128,1,390.981675,found SuicidalContract
+smartian,justlen,128,10,17182.167003,found SuicidalContract
+smartian,justlen,128,2,1890.103009,found SuicidalContract
+smartian,justlen,128,3,16005.261916,found SuicidalContract
+smartian,justlen,128,4,2129.22507,found SuicidalContract
+smartian,justlen,128,5,536.949485,found SuicidalContract
+smartian,justlen,128,6,519.535037,found SuicidalContract
+smartian,justlen,128,7,1735.58444,found SuicidalContract
+smartian,justlen,128,8,257.78019,found SuicidalContract
+smartian,justlen,128,9,21609.85646,found SuicidalContract
+smartian,justlen,256,1,54292.169604,found SuicidalContract
+smartian,justlen,256,10,1835.175767,found SuicidalContract
+smartian,justlen,256,2,31274.083693,found SuicidalContract
+smartian,justlen,256,3,8784.649157,found SuicidalContract
+smartian,justlen,256,4,103749.572071,found SuicidalContract
+smartian,justlen,256,5,172800.554659,None
+smartian,justlen,256,6,3084.595166,found SuicidalContract
+smartian,justlen,256,7,68393.258804,found SuicidalContract
+smartian,justlen,256,8,100395.616895,found SuicidalContract
+smartian,justlen,256,9,172800.531327,None
+smartian,justlen,64,1,193.864764,found SuicidalContract
+smartian,justlen,64,10,241.764245,found SuicidalContract
+smartian,justlen,64,2,482.623593,found SuicidalContract
+smartian,justlen,64,3,323.111541,found SuicidalContract
+smartian,justlen,64,4,258.797983,found SuicidalContract
+smartian,justlen,64,5,383.564477,found SuicidalContract
+smartian,justlen,64,6,324.856478,found SuicidalContract
+smartian,justlen,64,7,302.595628,found SuicidalContract
+smartian,justlen,64,8,226.949665,found SuicidalContract
+smartian,justlen,64,9,334.526793,found SuicidalContract
+smartian,justlen,8,1,24.414514,found SuicidalContract
+smartian,justlen,8,10,45.864501,found SuicidalContract
+smartian,justlen,8,2,57.135678,found SuicidalContract
+smartian,justlen,8,3,154.025666,found SuicidalContract
+smartian,justlen,8,4,69.873318,found SuicidalContract
+smartian,justlen,8,5,69.234136,found SuicidalContract
+smartian,justlen,8,6,44.718074,found SuicidalContract
+smartian,justlen,8,7,173.37761,found SuicidalContract
+smartian,justlen,8,8,148.568693,found SuicidalContract
+smartian,justlen,8,9,58.726714,found SuicidalContract
+smartian,multi_gen,10,1,172800.415193,None
+smartian,multi_gen,10,10,172800.670325,None
+smartian,multi_gen,10,2,172800.448747,None
+smartian,multi_gen,10,3,172800.502101,None
+smartian,multi_gen,10,4,172800.599079,None
+smartian,multi_gen,10,5,172800.466328,None
+smartian,multi_gen,10,6,172800.483993,None
+smartian,multi_gen,10,7,172800.53253,None
+smartian,multi_gen,10,8,172800.734026,None
+smartian,multi_gen,10,9,172800.503226,None
+smartian,multi_gen,2,1,457.060992,found SuicidalContract
+smartian,multi_gen,2,10,26.122726,found SuicidalContract
+smartian,multi_gen,2,2,65.231065,found SuicidalContract
+smartian,multi_gen,2,3,79.179076,found SuicidalContract
+smartian,multi_gen,2,4,31.510617,found SuicidalContract
+smartian,multi_gen,2,5,28.183383,found SuicidalContract
+smartian,multi_gen,2,6,111.752193,found SuicidalContract
+smartian,multi_gen,2,7,30.10629,found SuicidalContract
+smartian,multi_gen,2,8,20.645594,found SuicidalContract
+smartian,multi_gen,2,9,278.055656,found SuicidalContract
+smartian,multi_gen,3,1,172800.381392,None
+smartian,multi_gen,3,10,1309.339658,found SuicidalContract
+smartian,multi_gen,3,2,172800.502695,None
+smartian,multi_gen,3,3,131.133908,found SuicidalContract
+smartian,multi_gen,3,4,6739.569993,found SuicidalContract
+smartian,multi_gen,3,5,172800.575717,None
+smartian,multi_gen,3,6,1908.938224,found SuicidalContract
+smartian,multi_gen,3,7,172800.545281,None
+smartian,multi_gen,3,8,172800.69692,None
+smartian,multi_gen,3,9,61.022651,found SuicidalContract
+smartian,multi_gen,4,1,172800.394504,None
+smartian,multi_gen,4,10,172800.490598,None
+smartian,multi_gen,4,2,473.309852,found SuicidalContract
+smartian,multi_gen,4,3,172800.518398,None
+smartian,multi_gen,4,4,172800.573068,None
+smartian,multi_gen,4,5,263.631733,found SuicidalContract
+smartian,multi_gen,4,6,172800.472138,None
+smartian,multi_gen,4,7,172800.533876,None
+smartian,multi_gen,4,8,172800.668968,None
+smartian,multi_gen,4,9,172800.517791,None
+smartian,multi_gen,5,1,172800.393551,None
+smartian,multi_gen,5,10,172800.493791,None
+smartian,multi_gen,5,2,718.908498,found SuicidalContract
+smartian,multi_gen,5,3,172800.543698,None
+smartian,multi_gen,5,4,172800.511448,None
+smartian,multi_gen,5,5,172800.470093,None
+smartian,multi_gen,5,6,172800.567068,None
+smartian,multi_gen,5,7,172800.217977,None
+smartian,multi_gen,5,8,43654.532764,found SuicidalContract
+smartian,multi_gen,5,9,172800.500604,None
+smartian,multi_gen,6,1,172800.385599,None
+smartian,multi_gen,6,10,172800.520248,None
+smartian,multi_gen,6,2,172800.498827,None
+smartian,multi_gen,6,3,172800.528003,None
+smartian,multi_gen,6,4,172800.697822,None
+smartian,multi_gen,6,5,172800.476799,None
+smartian,multi_gen,6,6,172800.507323,None
+smartian,multi_gen,6,7,172800.509576,None
+smartian,multi_gen,6,8,172800.732672,None
+smartian,multi_gen,6,9,172800.473282,None
+smartian,multi_gen,7,1,39631.781591,found SuicidalContract
+smartian,multi_gen,7,10,172800.609709,None
+smartian,multi_gen,7,2,172800.477034,None
+smartian,multi_gen,7,3,172800.513037,None
+smartian,multi_gen,7,4,172800.528018,None
+smartian,multi_gen,7,5,172800.509437,None
+smartian,multi_gen,7,6,172800.48588,None
+smartian,multi_gen,7,7,172800.587258,None
+smartian,multi_gen,7,8,172800.536528,None
+smartian,multi_gen,7,9,172800.509478,None
+smartian,multi_gen,8,1,172800.399928,None
+smartian,multi_gen,8,10,172800.62815,None
+smartian,multi_gen,8,2,172800.470763,None
+smartian,multi_gen,8,3,172800.724928,None
+smartian,multi_gen,8,4,172800.486338,None
+smartian,multi_gen,8,5,172800.531987,None
+smartian,multi_gen,8,6,172800.50316,None
+smartian,multi_gen,8,7,172800.506126,None
+smartian,multi_gen,8,8,172800.715737,None
+smartian,multi_gen,8,9,172800.520745,None
+smartian,multi_gen,9,1,172800.40729,None
+smartian,multi_gen,9,10,172800.531901,None
+smartian,multi_gen,9,2,172800.455724,None
+smartian,multi_gen,9,3,172800.50963,None
+smartian,multi_gen,9,4,172800.553704,None
+smartian,multi_gen,9,5,172800.472763,None
+smartian,multi_gen,9,6,172800.498532,None
+smartian,multi_gen,9,7,172800.511403,None
+smartian,multi_gen,9,8,172800.551256,None
+smartian,multi_gen,9,9,172800.582128,None
+smartian,multi_man_complex,5,1,172800.389941,None
+smartian,multi_man_complex,5,10,172800.584907,None
+smartian,multi_man_complex,5,2,172800.486097,None
+smartian,multi_man_complex,5,3,172800.717931,None
+smartian,multi_man_complex,5,4,172800.43263,None
+smartian,multi_man_complex,5,5,172800.480348,None
+smartian,multi_man_complex,5,6,172800.51465,None
+smartian,multi_man_complex,5,7,172800.612034,None
+smartian,multi_man_complex,5,8,172800.498481,None
+smartian,multi_man_complex,5,9,172800.758503,None
+smartian,multi_man_complex,7,1,172800.3835,None
+smartian,multi_man_complex,7,10,172800.688547,None
+smartian,multi_man_complex,7,2,172800.496079,None
+smartian,multi_man_complex,7,3,172800.501886,None
+smartian,multi_man_complex,7,4,172800.435603,None
+smartian,multi_man_complex,7,5,172800.48414,None
+smartian,multi_man_complex,7,6,172800.475594,None
+smartian,multi_man_complex,7,7,172800.729229,None
+smartian,multi_man_complex,7,8,172800.482213,None
+smartian,multi_man_complex,7,9,172800.504846,None
+smartian,multi_man_complex,9,1,172800.436972,None
+smartian,multi_man_complex,9,10,172800.539295,None
+smartian,multi_man_complex,9,2,172800.494191,None
+smartian,multi_man_complex,9,3,172800.534498,None
+smartian,multi_man_complex,9,4,172800.415586,None
+smartian,multi_man_complex,9,5,172800.500429,None
+smartian,multi_man_complex,9,6,172800.49381,None
+smartian,multi_man_complex,9,7,172800.516852,None
+smartian,multi_man_complex,9,8,172800.461533,None
+smartian,multi_man_complex,9,9,172800.512503,None
+smartian,multi_simple,10,1,44137.904665,found SuicidalContract
+smartian,multi_simple,10,10,15459.157364,found SuicidalContract
+smartian,multi_simple,10,2,14665.032817,found SuicidalContract
+smartian,multi_simple,10,3,36833.083852,found SuicidalContract
+smartian,multi_simple,10,4,13971.952155,found SuicidalContract
+smartian,multi_simple,10,5,19750.651824,found SuicidalContract
+smartian,multi_simple,10,6,13774.300454,found SuicidalContract
+smartian,multi_simple,10,7,65.717965,found SuicidalContract
+smartian,multi_simple,10,8,531.799064,found SuicidalContract
+smartian,multi_simple,10,9,775.31002,found SuicidalContract
+smartian,multi_simple,9,1,2093.0269,found SuicidalContract
+smartian,multi_simple,9,10,52.395978,found SuicidalContract
+smartian,multi_simple,9,2,90.189193,found SuicidalContract
+smartian,multi_simple,9,3,244.440847,found SuicidalContract
+smartian,multi_simple,9,4,469.739189,found SuicidalContract
+smartian,multi_simple,9,5,234.400009,found SuicidalContract
+smartian,multi_simple,9,6,629.955012,found SuicidalContract
+smartian,multi_simple,9,7,21.370268,found SuicidalContract
+smartian,multi_simple,9,8,83.207688,found SuicidalContract
+smartian,multi_simple,9,9,459.807809,found SuicidalContract
+verismart,justlen,128,1,47254.158189,None
+verismart,justlen,128,2,67698.46953,None
+verismart,justlen,128,3,114769.634881,None
+verismart,justlen,256,1,42422.328331,None
+verismart,justlen,256,2,38523.605815,None
+verismart,justlen,256,3,172927.914712,None
+verismart,justlen,64,1,52416.15615,None
+verismart,justlen,64,2,57360.010807,None
+verismart,justlen,64,3,163276.319015,None
+verismart,justlen,8,1,27421.893452, line 72: selfdestruct(msg.sender)
+verismart,justlen,8,2,26365.393773, line 72: selfdestruct(msg.sender)
+verismart,justlen,8,3,26354.036585, line 72: selfdestruct(msg.sender)
+verismart,multi_gen,10,1,80449.650636, line 166: selfdestruct(msg.sender)
+verismart,multi_gen,10,2,79771.459846, line 166: selfdestruct(msg.sender)
+verismart,multi_gen,10,3,82038.592004, line 166: selfdestruct(msg.sender)
+verismart,multi_gen,2,1,1.004445, line 38: selfdestruct(msg.sender)
+verismart,multi_gen,2,2,0.828908, line 38: selfdestruct(msg.sender)
+verismart,multi_gen,2,3,1.446491, line 38: selfdestruct(msg.sender)
+verismart,multi_gen,3,1,4.569425, line 46: selfdestruct(msg.sender)
+verismart,multi_gen,3,2,3.867965, line 46: selfdestruct(msg.sender)
+verismart,multi_gen,3,3,5.521947, line 46: selfdestruct(msg.sender)
+verismart,multi_gen,4,1,26.383447, line 69: selfdestruct(msg.sender)
+verismart,multi_gen,4,2,23.273333, line 69: selfdestruct(msg.sender)
+verismart,multi_gen,4,3,24.533722, line 69: selfdestruct(msg.sender)
+verismart,multi_gen,5,1,70.062717, line 86: selfdestruct(msg.sender)
+verismart,multi_gen,5,2,63.296062, line 86: selfdestruct(msg.sender)
+verismart,multi_gen,5,3,58.93981, line 86: selfdestruct(msg.sender)
+verismart,multi_gen,6,1,524.758933, line 96: selfdestruct(msg.sender)
+verismart,multi_gen,6,2,431.386978, line 96: selfdestruct(msg.sender)
+verismart,multi_gen,6,3,526.71718, line 96: selfdestruct(msg.sender)
+verismart,multi_gen,7,1,1555.90748, line 117: selfdestruct(msg.sender)
+verismart,multi_gen,7,2,1330.977191, line 117: selfdestruct(msg.sender)
+verismart,multi_gen,7,3,1287.803958, line 117: selfdestruct(msg.sender)
+verismart,multi_gen,8,1,2328.443512, line 154: selfdestruct(msg.sender)
+verismart,multi_gen,8,2,1992.752633, line 154: selfdestruct(msg.sender)
+verismart,multi_gen,8,3,1902.058958, line 154: selfdestruct(msg.sender)
+verismart,multi_gen,9,1,4428.518452, line 151: selfdestruct(msg.sender)
+verismart,multi_gen,9,2,3904.143383, line 151: selfdestruct(msg.sender)
+verismart,multi_gen,9,3,3899.352454, line 151: selfdestruct(msg.sender)
+verismart,multi_man_complex,5,1,837.059381, line 97: selfdestruct(msg.sender)
+verismart,multi_man_complex,5,2,777.678121, line 97: selfdestruct(msg.sender)
+verismart,multi_man_complex,5,3,775.015416, line 97: selfdestruct(msg.sender)
+verismart,multi_man_complex,7,1,24962.987023, line 128: selfdestruct(msg.sender)
+verismart,multi_man_complex,7,2,24002.756891, line 128: selfdestruct(msg.sender)
+verismart,multi_man_complex,7,3,24332.879938, line 128: selfdestruct(msg.sender)
+verismart,multi_man_complex,9,1,172982.947655,None
+verismart,multi_man_complex,9,2,172914.463973,None
+verismart,multi_man_complex,9,3,172932.254357,None
+verismart,multi_simple,10,1,930.717169, line 82: selfdestruct(msg.sender)
+verismart,multi_simple,10,2,783.159594, line 82: selfdestruct(msg.sender)
+verismart,multi_simple,10,3,852.093937, line 82: selfdestruct(msg.sender)
+verismart,multi_simple,9,1,322.064407, line 75: selfdestruct(msg.sender)
+verismart,multi_simple,9,2,296.738947, line 75: selfdestruct(msg.sender)
+verismart,multi_simple,9,3,281.091563, line 75: selfdestruct(msg.sender)

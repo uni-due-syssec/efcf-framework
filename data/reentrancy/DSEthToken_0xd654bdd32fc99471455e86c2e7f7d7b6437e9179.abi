@@ -1,0 +1,122 @@
+[
+  {
+    "name": "balanceOf",
+    "type": "function",
+    "payable": false,
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "name": "allowance",
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "name": "_spender",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "name": "deposit",
+    "constant": false,
+    "inputs": [],
+    "outputs": [],
+    "payable": true,
+    "type": "function"
+  },
+  {
+    "name": "approve",
+    "type": "function",
+    "payable": true,
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_spender",
+        "type": "address"
+      },
+      {
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "withdraw",
+    "type": "function",
+    "payable": true,
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "transfer",
+    "type": "function",
+    "payable": true,
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "transferFrom",
+    "type": "function",
+    "payable": true,
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "payable": true,
+    "type": "fallback"
+  }
+]
