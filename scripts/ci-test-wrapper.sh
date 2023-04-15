@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ -z "$EFCF_BUILD_CACHE" ]]; then
-    EFCF_BUILD_CACHE=./efcf-build-cache
+    EFCF_BUILD_CACHE="$(realpath -m ./efcf-build-cache)"
 fi
 
 if [[ -z "$FUZZING_TIME" ]]; then
@@ -29,14 +29,18 @@ test -n "$(ls -A ./out/basic_src_results/default/crashes/)"
 pushd ./out/basic_src_results/
 ./r.sh ./default/crashes/id*
 popd
+rm -rf "$EFCF_BUILD_CACHE"
 
 echo "# testing fuzzing with other cli flags"
 efcfuzz --compress-builds n --quiet --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
-efcfuzz --compress-builds n --quiet --print-progress --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
-efcfuzz --compress-builds n --quiet --print-progress --cores "$(nproc)" --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
-
 rm -rf "$EFCF_BUILD_CACHE"
-df -h . /tmp/ /dev/shm/
+efcfuzz --compress-builds n --quiet --print-progress --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
+rm -rf "$EFCF_BUILD_CACHE"
+echo "cores: $(nproc)"
+efcfuzz --compress-builds n --quiet --print-progress --cores "$(nproc)" --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
+rm -rf "$EFCF_BUILD_CACHE"
+
+df -h . /tmp/ /dev/shm/ /tmp/efcf/
 
 echo "# ==== testing fuzzing combined.json ===="
 pushd ./data/tests/; make basic.combined.json; popd
@@ -118,5 +122,16 @@ test -n "$(ls -A ./out/basic_cj2_results/default/crashes/)"
 pushd ./out/basic_cj2_results/
 ./r.sh ./default/crashes/id*
 popd
+rm -rf "$EFCF_BUILD_CACHE" || true
 
+
+echo "# ==== testing fuzzing VulnBankBuggyLockHard example ===="
+pushd ./examples/ReentrancyVulnBankBuggyLockHard/
+efcfuzz --source victim.sol --cores `nproc` --name VulnBankBuggyLockHard --until-crash --quiet --print-progress --timeout "$FUZZING_TIME"
+find ./efcf_out/crashes_min
+test -n "$(ls -A ./efcf_out/crashes_min)"
+pushd ./efcf_out/crashes_min
+./r.sh ./crashes_min/id*
+popd  # ./efcf_out/crashes_min
+popd  # ./examples/ReentrancyVulnBankBuggyLockHard/
 rm -rf "$EFCF_BUILD_CACHE" || true
