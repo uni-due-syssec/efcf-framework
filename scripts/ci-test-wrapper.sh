@@ -13,6 +13,7 @@ export FUZZING_TIME
 export AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES="1"
 
 set -eu -o pipefail
+set -x
 
 mkdir -p out || true
 rm -rf "$EFCF_BUILD_CACHE"
@@ -28,6 +29,12 @@ test -n "$(ls -A ./out/basic_src_results/default/crashes/)"
 pushd ./out/basic_src_results/
 ./r.sh ./default/crashes/id*
 popd
+
+echo "# testing fuzzing with other cli flags"
+efcfuzz --compress-builds n --quiet --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
+efcfuzz --compress-builds n --quiet --print-progress --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
+efcfuzz --compress-builds n --quiet --print-progress --cores "$(nproc)" --until-crash --timeout $FUZZING_TIME --out ./out/basic_src_results/ --source ./data/tests/basic.sol
+
 rm -rf "$EFCF_BUILD_CACHE"
 df -h . /tmp/ /dev/shm/
 
