@@ -18,6 +18,8 @@ data/multi/out/
 efcf*.tar
 efcf_out
 efcf-build-cache
+examples/*/efcf-build-cache
+examples/*/efcf_out
 
 src/AFLplusplus/qemu_mode
 src/AFLplusplus/unicorn_mode
