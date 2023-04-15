@@ -100,9 +100,13 @@ def get_yn_env(s, default):
 
 
 def valid_timespan(s):
+    if isinstance(s, int):
+        return s
     if not s:
         raise ValueError(f"invalid timespan integer {s!r}")
     s = s.strip()
+    if s == "forever":  # a bit of a hack but ¯\_(ツ)_/¯
+        return (2**32) - 1
     try:
         return int(s, 0)
     except ValueError:
@@ -322,7 +326,7 @@ def parse_args():
     g.add_argument(
         "-t",
         "--timeout",
-        default=600,
+        default="24h",
         type=valid_timespan,
         help=
         "total fuzzing campaign timeout in seconds (or minutes postfixed with 'm'; or hours postfixed with 'h')"

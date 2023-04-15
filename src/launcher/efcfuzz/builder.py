@@ -226,7 +226,7 @@ def quick_build(config,
                 if buildlog_mem:
                     buildlog_mem_tail = (
                         b":\n\n---- snip ----\n" +
-                        (buildlog_mem.join(b"").split(b"\n")[-7:].join(b"\n")))
+                        (b"\n".join(buildlog_mem.join(b"").split(b"\n")[-7:])))
                     try:
                         buildlog_mem_tail = buildlog_mem_tail.decode("utf-8")
                     except UnicodeDecodeError:
