@@ -130,8 +130,8 @@ pushd ./examples/ReentrancyVulnBankBuggyLockHard/
 efcfuzz --source victim.sol --cores `nproc` --name VulnBankBuggyLockHard --until-crash --quiet --print-progress --timeout "$FUZZING_TIME"
 find ./efcf_out/crashes_min
 test -n "$(ls -A ./efcf_out/crashes_min)"
-pushd ./efcf_out/crashes_min
-./r.sh ./crashes_min/id*
-popd  # ./efcf_out/crashes_min
+pushd ./efcf_out/
+./r.sh ./crashes_min/*
+popd  # ./efcf_out/
 popd  # ./examples/ReentrancyVulnBankBuggyLockHard/
 rm -rf "$EFCF_BUILD_CACHE" || true
