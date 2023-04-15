@@ -44,4 +44,12 @@ fuzz-%: ./scripts/fuzz-%.sh ./data/%
 	for i in $$(seq 0 $$FUZZ_CORES $$(($(FUZZER_INSTANCES) * $(FUZZ_CORES) - 1))); do $(MAKE) run-$@ CPU=--cpuset-cpus=$$i-$$(($$i + $(FUZZ_CORES) - 1)); sleep 1; done
 
 
-.PHONY: help system-install bump
+ifeq ($(CONTAINER_RUNTIME), )
+ci-test-wrapper: ./scripts/ci-test-wrapper.sh
+	$<
+else
+ci-test-wrapper: ./scripts/ci-test-wrapper.sh container-build
+	$(CONTAINER_RUNTIME) run $(CONTAINER_RUN_FLAGS) $(CPU) `cat $(CONTAINER_STAMP)` $<
+endif
+
+.PHONY: help system-install bump ci-test-wrapper
