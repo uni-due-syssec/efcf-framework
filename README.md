@@ -68,7 +68,7 @@ for citation:
 
 1. Enter container
    ```
-   docker run --rm -it ghcr.io/uni-due-syssec/efcf-framework:main
+   docker run --rm -it ghcr.io/uni-due-syssec/efcf-framework
    ```
    or build the container from the cloned repository
    ```
