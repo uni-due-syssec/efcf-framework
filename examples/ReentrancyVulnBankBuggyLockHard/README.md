@@ -21,7 +21,7 @@ To start the fuzzing with EF/CF, we can launch it with:
 efcfuzz --source victim.sol --cores `nproc` --name VulnBankBuggyLockHard --until-crash --quiet --print-progress
 ``` 
 
-* `--quiet` surpresses the base fuzzer's output (i.e., AFL++'s).
+* `--quiet` suppresses the base fuzzer's output (i.e., AFL++'s).
 * `--print-progress` will periodically log the current fuzzing stats.
 * `--source` the solidity source code.
 * `--until-crash` stop after finding first crash.

@@ -66,7 +66,9 @@ for citation:
 
 ## Quickstart
 
-1. Enter container
+The recommended way is to run EF/CF as an interactive docker container.
+
+1. Enter the container with a shell
    ```
    docker run --rm -it ghcr.io/uni-due-syssec/efcf-framework
    ```
@@ -75,12 +77,12 @@ for citation:
    make gitmodules  # to fetch the git submodules
    make container-enter
    ```
-2. Compile and then fuzz a solidity contract until the first crash/bug is
+1. Compile and then fuzz a solidity contract until the first crash/bug is
    discovered:
    ```
    efcfuzz --until-crash --out ./baby_bank_results/ --source ./data/examples/baby_bank.sol
    ```
-3. Inspect the identified crash
+2. Inspect the identified crash
    ```
    cd /tmp/baby_bank_results/
    ./r.sh crashes_min/default_id:000000*
@@ -123,7 +125,7 @@ Alternatively the container can be built with the following docker command:
 ```sh
 docker build \
     -f docker/ubuntu.Dockerfile \
-    -t efcf:latest -t efcf:ubuntu-latest \
+    -t efcf:latest \
     .
 ```
 
@@ -143,6 +145,7 @@ We recommend the following docker options for launching:
 * `--net=host` - for easy access to a local ethereum node
 * `--tmpfs "/tmp/efcf/":exec,size=6g` - put EF/CF's temporary files onto a ramdisk if possible (less disk wear)
 * `--privileged` - to run `afl-system-config` or `efcfuzz --configure-system`
+* `-v` - to persist the output data of EF/CF
 
 
 ### VM / Bare-Metal
@@ -190,7 +193,7 @@ a docker-based workflow you can either launch the docker container with the
 bake the API key into the docker container.
 
 
-## Using the EF/CF launcher
+## Starting EF/CF with the launcher
 
 For convenience, we utilize a wrapper script that takes cares of all the details
 for you, when launching the EF/CF fuzzer: `efcfuzz`
@@ -205,27 +208,36 @@ Compile solidity source code to EF/CF native code and start fuzzing for 5
 minutes (aka 300 seconds).
 
 ```bash
-$ efcfuzz --timeout 300 --source ./data/examples/baby_bank.sol
+efcfuzz --timeout 300 --source ./data/examples/baby_bank.sol
 ```
+
+Alternatively, launch with reduced fuzzing output (`--quiet` suppresses the
+base fuzzer's output, while `--print-progress` will print a short summary of
+the fuzzing progress), and launching the fuzzer on 4 cores.
+
+```bash
+efcfuzz --quiet --print-progress --cores 4 --timeout 300 --source ./data/examples/baby_bank.sol
+```
+
 
 Use already compiled bytecode and compile the bytecode to EF/CF native code and start fuzzing.
 
 ```bash
 # efcfuzz can handle the combined.json output of the solidity compiler
-$ pushd ./data/examples/; make baby_bank.combined.json; popd
-$ efcfuzz --timeout 300 --bin-runtime ./data/examples/baby_bank.combined.json
+pushd ./data/examples/; make baby_bank.combined.json; popd
+efcfuzz --timeout 300 --bin-runtime ./data/examples/baby_bank.combined.json
 
 # but you can also explicitely pass the runtime and deploy bytecode and the ABI
 # definition. This is useful if you want to fuzz contracts using other
 # compilers (e.g., vyper).
-$ pushd ./data/examples/; make baby_bank; popd
-$ efcfuzz --timeout 300 \
+pushd ./data/examples/; make baby_bank; popd
+efcfuzz --timeout 300 \
     --bin-runtime ./data/examples/baby_bank.bin-runtime \
     --bin-deploy ./data/examples/baby_bank.bin \
     --abi ./data/examples/baby_bank.abi
 ```
 
-The wrapper can export a contract's state from a go-ethereum node and start
+The wrapper can export a contract's state from a go-ethereum/erigon node and start
 fuzzing from there.
 
 ```bash
