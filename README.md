@@ -72,6 +72,7 @@ for citation:
    ```
    or build the container from the cloned repository
    ```
+   make gitmodules  # to fetch the git submodules
    make container-enter
    ```
 2. Compile and then fuzz a solidity contract until the first crash/bug is
