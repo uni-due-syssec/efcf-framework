@@ -213,7 +213,7 @@ def quick_build(config,
         exitcode = proc.poll()
         if exitcode != 0:
             if buildlog_mem and not log_path:
-                bm = buildlog_mem.join(b"")
+                bm = b"".join(buildlog_mem)
                 try:
                     bm = bm.decode("utf-8")
                 except UnicodeDecodeError:
@@ -226,7 +226,7 @@ def quick_build(config,
                 if buildlog_mem:
                     buildlog_mem_tail = (
                         b":\n\n---- snip ----\n" +
-                        (b"\n".join(buildlog_mem.join(b"").split(b"\n")[-7:])))
+                        (b"\n".join(b"".join(buildlog_mem).split(b"\n")[-7:])))
                     try:
                         buildlog_mem_tail = buildlog_mem_tail.decode("utf-8")
                     except UnicodeDecodeError:
