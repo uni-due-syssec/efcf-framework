@@ -59,7 +59,6 @@ for citation:
   booktitle    = "{IEEE} European Symposium on Security and Privacy ({EuroS\&P})",
   publisher    = "{IEEE}",
   year         = "2023",
-  pubstate     = "To appear",
 }
 ```
 
@@ -165,8 +164,29 @@ this mostly installs dependencies and some tools that are handy to have in your
 * Archlinux
 
 (Distro does not matter that much, we tested LLVM 13 and 14 with 14 being the
-preferred choice. LLVM 11 or 12 might also still work, but as always - the newer the
-better)
+preferred choice. LLVM 11 or 12 might also still work, ~~but as always - the newer the
+better~~. The important part is that there is a LLVM that is compatible with our fork of AFL++.)
+
+
+### On Mac OS / M1
+
+We have not tested EF/CF on Mac OS natively. Likely things won't work (e.g., `afl-clang-lto` on Mac OS seems to not work). The best option is to utilize docker.
+
+```sh
+# make sure that the submodules are initialized
+make gitmodules
+# pull the linux/amd64 base image
+docker pull ubuntu:jammy --platform linux/amd64
+# build the ef/cf image
+docker build -t efcf:latest -f docker/ubuntu.Dockerfile --platform linux/amd64 .
+# launch the EF/CF container
+docker run --platform linux/amd64 --rm -it -v $(pwd):$(pwd) -w $(pwd) efcf:latest 
+```
+
+We tested using docker desktop v4.21.1 and basic EF/CF usage works. However, consider the following:
+* If you see segfaults while building: try increasing the memory limit of the VM docker uses on Mac OS.
+* Try enabling acceleration using rosetta in docker - hopefully this is a bit faster.
+
 
 ### Development Setup
 
