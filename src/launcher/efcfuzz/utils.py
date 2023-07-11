@@ -194,7 +194,12 @@ def set_or_remove(d, k, v):
 def is_on_tmpfs(path: Path):
     avoid_mnts = list(map(Path, ('/', '/dev/', '/proc/', '/sys')))
     mtabp = Path("/etc/mtab")
-    if mtabp.exists():
+    # sometimes mtab doesn't exist, seems to be there for compat only
+    if not mtabp.exists():
+        mtabp = Path("/proc/self/mounts")
+        if not mtabp.exists():  # odd, but ok.
+            mtabp = None
+    if mtabp is not None:
         with mtabp.open() as f:
             mtab = map(str.strip, f.readlines())
             for line in mtab:
@@ -208,13 +213,14 @@ def is_on_tmpfs(path: Path):
                 if mntpoint in avoid_mnts:
                     continue
                 opts = list(map(str.strip, line[3].strip().split(",")))
+                # we need a executable tmpfs since we unpack build artifacts
                 if "noexec" in opts:
                     continue
+
                 if path.is_relative_to(mntpoint):
                     if dev == "tmpfs" or "zram" in dev:
                         return True, mntpoint
-                    else:
-                        return False, mntpoint
+                    return False, mntpoint
     return False, None
 
 
@@ -246,7 +252,7 @@ def check_and_extend_path(config):
         if not (afl_dir / "afl-fuzz").exists():
             with pushdir(afl_dir):
                 log("building AFL++")
-                run("make source-only NO_SPLICING=1 NO_PYTHON=1", p=1)
+                run("make source-only NO_SPLICING=1 NO_PYTHON=1 NO_NYX=1", p=1)
 
         os.environ['PATH'] += f":{afl_dir!s}"
 

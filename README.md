@@ -180,7 +180,7 @@ docker pull ubuntu:jammy --platform linux/amd64
 # build the ef/cf image
 docker build -t efcf:latest -f docker/ubuntu.Dockerfile --platform linux/amd64 .
 # launch the EF/CF container
-docker run --platform linux/amd64 --rm -it -v $(pwd):$(pwd) -w $(pwd) efcf:latest 
+docker run --tmpfs "/tmp/efcf/":exec,size=8g --platform linux/amd64 --rm -it -v $(pwd):$(pwd) -w $(pwd) efcf:latest 
 ```
 
 We tested using docker desktop v4.21.1 and basic EF/CF usage works. However, consider the following:

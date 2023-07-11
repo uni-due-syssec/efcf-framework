@@ -447,7 +447,7 @@ def parse_args():
         "-q",
         "--quiet",
         action="store_true",
-        help="disable verbose logging and suppress fuzzer output")
+        help="suppress fuzzer output *and* disable verbose logging")
 
     args = parser.parse_args()
     args.install_dir = realpath(args.install_dir)

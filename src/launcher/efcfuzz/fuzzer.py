@@ -98,8 +98,8 @@ class AFLStats:
                 self.total_time += run_unix
                 self.total_eps += exec_sec
                 self.total_execs += execs_done
-                self.total_crashes += fuzzer_stats.get("saved_crashes", 0)
-                self.total_hangs += fuzzer_stats.get("saved_hangs", 0)
+                self.total_crashes += int(fuzzer_stats.get("saved_crashes", 0))
+                self.total_hangs += int(fuzzer_stats.get("saved_hangs", 0))
 
             if fuzzers != 0:
                 self.avg_eps = self.total_eps / fuzzers
@@ -108,7 +108,7 @@ class AFLStats:
                 self.avg_bitmap_cov = bitmap_cov / fuzzers
 
             self.time = run_unix
-            self.fuzzers = fuzzers
+            self.fuzzers = int(fuzzers)
 
     def __str__(self):
         return f"""time                     : {self.time}
